@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ebbffa82-dec7-44b0-978d-55dab7b189ec": {
+      "ProjectGuid": "ebbffa82-dec7-44b0-978d-55dab7b189ec",
+      "DisplayName": "DeliverEase",
+      "ColorIndex": 0
+    },
+    "75e9c345-801e-406a-9595-336a799c2799": {
+      "ProjectGuid": "75e9c345-801e-406a-9595-336a799c2799",
+      "DisplayName": "NUnitTests",
+      "ColorIndex": 1
+    },
+    "4ecd87fa-27ac-4c7d-93c1-0e146673a951": {
+      "ProjectGuid": "4ecd87fa-27ac-4c7d-93c1-0e146673a951",
+      "DisplayName": "NUnitTests",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 3
+}

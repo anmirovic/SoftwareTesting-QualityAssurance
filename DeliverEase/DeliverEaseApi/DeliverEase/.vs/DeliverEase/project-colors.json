@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "484c2253-ae66-4741-927e-c2393763c8c9": {
+      "ProjectGuid": "484c2253-ae66-4741-927e-c2393763c8c9",
+      "DisplayName": "DeliverEase",
+      "ColorIndex": 0
+    },
+    "7ae83901-092e-4bb1-a5eb-95b5bdd8a4bc": {
+      "ProjectGuid": "7ae83901-092e-4bb1-a5eb-95b5bdd8a4bc",
+      "DisplayName": "NUnitTests",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}
