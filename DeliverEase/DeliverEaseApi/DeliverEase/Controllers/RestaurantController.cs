@@ -43,7 +43,7 @@ namespace DeliverEase.Controllers
                 var restaurant = await _restaurantService.GetRestaurantByIdAsync(id);
                 if (restaurant == null)
                 {
-                    return NotFound($"Restaurant with ID {id} does not exist.");
+                    return BadRequest($"Restaurant with ID {id} does not exist.");
                 }
                 return Ok(restaurant);
             }
@@ -54,15 +54,27 @@ namespace DeliverEase.Controllers
         }
 
         [HttpPost("CreateRestaurant")]
-        public async Task<ActionResult<Restaurant>> CreateRestaurant(Restaurant restaurant)
+        public async Task<ActionResult> CreateRestaurant(Restaurant restaurant)
         {
             try
             {
-                restaurant.Id = null;
-                
-                var result= await _restaurantService.CreateRestaurantAsync(restaurant);
+                if (string.IsNullOrEmpty(restaurant.Address))
+                {
+                    ModelState.AddModelError("Address", "The Address field is required.");
+                    return BadRequest(ModelState);
+                }
+                else if(string.IsNullOrEmpty(restaurant.Name))
+                {
+                    ModelState.AddModelError("Name", "The Name field is required.");
+                    return BadRequest(ModelState);
+                }
 
-                return Ok(result.Id);
+                restaurant.Id = null;
+
+                var result = await _restaurantService.CreateRestaurantAsync(restaurant);
+
+               return Ok(result);   
+
             }
 			
             catch (Exception ex)
@@ -79,7 +91,7 @@ namespace DeliverEase.Controllers
                 var restaurant = await _restaurantService.GetRestaurantByIdAsync(id);
                 if (restaurant == null)
                 {
-                    return NotFound($"Restaurant with ID {id} does not exist.");
+                    return BadRequest($"Restaurant with ID {id} does not exist.");
                 }
 
                 restaurantIn.Id = id;
@@ -102,13 +114,13 @@ namespace DeliverEase.Controllers
                 var restaurant = await _restaurantService.GetRestaurantByIdAsync(id);
                 if (restaurant == null)
                 {
-                    return NotFound($"Restaurant with ID {id} does not exist.");
+                    return BadRequest($"Restaurant with ID {id} does not exist.");
                 }
                 await _reviewService.DeleteReviewsForRestaurantAsync(id);
 
                 await _restaurantService.DeleteRestaurantAsync(id);
 
-                return Ok("Restaurant successfully removed.");
+                return Ok($"Izbrisan je restoran: {restaurant.Id}");
             }
             catch (Exception ex)
             {
@@ -187,6 +199,8 @@ namespace DeliverEase.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+
 
         
     }
