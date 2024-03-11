@@ -74,7 +74,7 @@ namespace DeliverEase.Services
             await _restaurants.UpdateOneAsync(filter, update);
         }
 
-        public async Task<string> AddMealToRestaurantAsync(string restaurantId, Meal meal)
+        public async Task<Meal> AddMealToRestaurantAsync(string restaurantId, Meal meal)
         {
             var restaurant = await GetRestaurantByIdAsync(restaurantId);
             if (restaurant != null)
@@ -83,7 +83,7 @@ namespace DeliverEase.Services
                 meal.Id = ObjectId.GenerateNewId().ToString();
                 restaurant.Meals.Add(meal);
                 await UpdateRestaurantAsync(restaurantId, restaurant);
-                return meal.Id;
+                return meal;
             }
             else
             {
@@ -105,7 +105,7 @@ namespace DeliverEase.Services
                 }
                 else
                 {
-                    throw new Exception($"Meal with ID {mealId} not found in restaurant with ID {restaurantId}.");
+                    throw new Exception($"Meal with ID {mealId} not found");
                 }
             }
             else
@@ -120,7 +120,15 @@ namespace DeliverEase.Services
             var restaurant = await GetRestaurantByIdAsync(restaurantId);
             if (restaurant != null)
             {
-                return restaurant.Meals.Find(m => m.Id == mealId);
+                var meal= restaurant.Meals.Find(m => m.Id == mealId);
+                if (meal != null)
+                {
+                    return meal;
+                }
+                else
+                {
+                    throw new Exception($"Meal with ID {mealId} not found.");
+                }
             }
             else
             {

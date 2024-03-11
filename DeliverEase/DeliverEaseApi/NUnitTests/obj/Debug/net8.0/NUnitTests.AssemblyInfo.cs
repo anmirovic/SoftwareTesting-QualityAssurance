@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NUnitTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65f4d800273e3422bfa29fb2ebf413f1a02a634c")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2a547e359b44930b8eef0d50fbcaad4552f6b7d")]
+>>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("NUnitTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NUnitTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

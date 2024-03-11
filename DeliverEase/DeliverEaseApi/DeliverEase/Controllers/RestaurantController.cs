@@ -148,9 +148,25 @@ namespace DeliverEase.Controllers
         {
             try
             {
+                if (string.IsNullOrEmpty(meal.Name))
+                {
+                    ModelState.AddModelError("Name", "The Name field is required.");
+                    return BadRequest(ModelState);
+                }
+                else if (string.IsNullOrEmpty(meal.Description))
+                {
+                    ModelState.AddModelError("Description", "The Description field is required.");
+                    return BadRequest(ModelState);
+                }
+                else if (meal.Price==0)
+                {
+                    ModelState.AddModelError("Price", "The Price field is required.");
+                    return BadRequest(ModelState);
+                }
+
                 meal.Id=null;
-                var mealId = await _restaurantService.AddMealToRestaurantAsync(restaurantId, meal);
-                return Ok(mealId);
+                var addedmeal= await _restaurantService.AddMealToRestaurantAsync(restaurantId, meal);
+                return Ok(addedmeal);
             }
             catch (Exception ex)
             {
@@ -164,7 +180,7 @@ namespace DeliverEase.Controllers
             try
             {
                 await _restaurantService.DeleteMealFromRestaurantAsync(restaurantId, mealId);
-                return Ok("Meal deleted from restaurant successfully.");
+                return Ok($"Izbrisano je jelo: {mealId}");
             }
             catch (Exception ex)
             {

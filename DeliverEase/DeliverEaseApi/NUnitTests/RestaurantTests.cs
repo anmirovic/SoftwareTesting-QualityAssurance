@@ -73,9 +73,7 @@ namespace NUnitTests
             {
                 Name = "PrazanRestoran",
                 Address = "Obilicev Venac",
-                Meals = new List<Meal>
-                {
-                }
+                Meals = new List<Meal>()
                 
             };
 
