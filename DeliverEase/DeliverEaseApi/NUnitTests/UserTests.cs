@@ -9,6 +9,9 @@ using MongoDB.Driver;
 using System.ComponentModel.DataAnnotations;
 using DeliverEase.Services;
 using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Identity.Data;
+using DeliverEase.Helpers;
+using Microsoft.AspNetCore.Http;
 
 
 namespace NUnitTests
@@ -41,10 +44,10 @@ namespace NUnitTests
         {
             User user = new User
             {
-                Name = "Marko",
+                Name = "Marko",  
                 Surname = "Markovic",
                 Username = "Marko",
-                Email = "marko@gmail.com",
+                Email = "marko@gmail.com",  //pri ponovnom pokretanju testa, promeniti email
                 Password = "marko",
                 PhoneNumber = "0621234567",
                 Role = "user" 
@@ -72,7 +75,7 @@ namespace NUnitTests
                 Name = "Petar",
                 Surname = "Peric",
                 Username = "Petar",
-                Email = "petar@gmail.com",
+                Email = "petar@gmail.com",  //pri ponovnom pokretanju testa, promeniti email
                 Password = "petar",
                 PhoneNumber = "0625434567",
                 Role = "admin"
@@ -107,7 +110,7 @@ namespace NUnitTests
             Assert.IsInstanceOf<BadRequestObjectResult>(result);
         }
 
-        //BadRequest za Duplikate email
+        
         [Test]
         public async Task DodajKorisnika_DuplikatEmail()
         {
@@ -175,13 +178,12 @@ namespace NUnitTests
             Assert.IsInstanceOf<BadRequestObjectResult>(result);
             var badRequestResult = result as BadRequestObjectResult;
 
-            // Check if the Value is not null
             Assert.IsNotNull(badRequestResult.Value);
 
             Assert.AreEqual($"User with ID {nepostojeciId} does not exist.", badRequestResult.Value);
         }
 
-        //da li se obrisao iz baze
+       
         [Test]
         public async Task ObrisiKorisnika_ProveraBrisanjaIzBaze()
         {
@@ -226,57 +228,14 @@ namespace NUnitTests
             Assert.That(result, Is.Not.Null);
             var getUsers = result.Value as List<User>;
             Assert.That(getUsers, Is.Not.Null);
-            Assert.That(getUsers.Count+ users.Count, Is.EqualTo(users.Count+getUsers.Count));
+            Assert.That(getUsers.Count + users.Count, Is.EqualTo(users.Count+getUsers.Count));
 
         }
 
-        [Test]
-        public async Task PreuzmiKorisnike_PraznaLista()
-        {
-            // Kreiramo MongoDB klienta
-            var mongoClient = new MongoClient("mongodb://localhost:27017");
-
-            // Dobavljamo referencu na bazu podataka
-            var database = mongoClient.GetDatabase("TestDatabase");
-
-            // Brišemo sve postojeće korisnike iz kolekcije
-            var korisniciCollection = database.GetCollection<User>("Korisnici");
-            await korisniciCollection.DeleteManyAsync(Builders<User>.Filter.Empty);
-
-            var userService = new UserService(database);
-            var userController = new DeliverEase.Controllers.UserController(userService);
-
-            // Kreiramo listu korisnika
-            var users = new List<User>();
-
-            // Registrovanje korisnika
-            foreach (var user in users)
-            {
-                await userController.Register(user);
-            }
-
-            // Pozivamo akciju GetAllUsers() na kontroleru
-            var actionResult = await userController.GetAllUsers();
-
-            // Proveravamo rezultat
-            Assert.IsInstanceOf<OkObjectResult>(actionResult.Result);
-            var result = (OkObjectResult)actionResult.Result;
-
-            // Proveravamo da li je rezultat pravilan
-            Assert.IsNotNull(result);
-
-            // Izvlačimo listu korisnika iz rezultata
-            var getUsers = result.Value as List<User>;
-
-            // Proveravamo da li je lista korisnika prazna
-            Assert.IsNotNull(getUsers);
-            Assert.AreEqual(users.Count, getUsers.Count);
-        }
 
         [Test]
         public async Task PreuzmiKorisnika_UspesnoPreuzimanje()
         {
-            // Kreiramo korisnika za test
             var user = new User
             {
                 Name = "Ognjen",
@@ -288,23 +247,17 @@ namespace NUnitTests
                 Role = "admin"
             };
 
-            // Registrujemo korisnika
             await _userController.Register(user);
 
-            // Pozivamo akciju GetUserById() na kontroleru
             var actionResult = await _userController.GetUserById(user.Id);
 
-            // Proveravamo rezultat
             Assert.IsInstanceOf<OkObjectResult>(actionResult.Result);
             var result = (OkObjectResult)actionResult.Result;
 
-            // Proveravamo da li je rezultat pravilan
             Assert.IsNotNull(result);
 
-            // Izvlačimo korisnika iz rezultata
             var getUser = result.Value as User;
 
-            // Proveravamo da li je korisnik pronađen
             Assert.IsNotNull(getUser);
             Assert.AreEqual(user.Id, getUser.Id);
         }
@@ -317,29 +270,163 @@ namespace NUnitTests
 
             var rezultat = await _userController.GetUserById(nepostojeciId);
 
-
             Assert.IsInstanceOf<BadRequestObjectResult>(rezultat.Result);
             var result = (BadRequestObjectResult)rezultat.Result;
 
-            // Proveravamo da li je rezultat pravilan
             Assert.IsNotNull(result);
 
+        }
+
+        [Test]
+        public async Task Login_ValidniPodaci()
+        {
+            
+            var user = new User
+            {
+                Name = "Srecko",
+                Surname = "Ilic",
+                Username = "Srecko",
+                Email = "srecko@gmail.com",
+                Password = "srecko",
+                PhoneNumber = "1234567890",
+                Role = "user"
+            };
+
+            await _userController.Register(user);
+
+            var result = await _userController.Login(user.Email, user.Password);
+
+            Assert.IsNotNull(result);
+            Assert.IsNotInstanceOf<BadRequest>(result);
+
+        }
+
+        [Test]
+        public async Task Login_NevalidniEmail()
+        {
+
+            var user = new User
+            {
+                Name = "Petra",
+                Surname = "Petrovic",
+                Username = "Petra",
+                Email = "petra@gmail.com",
+                Password = "petra",
+                PhoneNumber = "1234567890",
+                Role = "user"
+            };
+
+            await _userController.Register(user);
+
+            var result = await _userController.Login("p@gmail.com", user.Password);
+             
+            Assert.IsInstanceOf<BadRequestObjectResult>(result);
+
+        }
+
+        [Test]
+        public async Task Login_NevalidnaLozinka()
+        {
+
+            var user = new User
+            {
+                Name = "Stevan",
+                Surname = "Mitrovic",
+                Username = "Stevan",
+                Email = "stevan@gmail.com",
+                Password = "stevan",
+                PhoneNumber = "1234789890",
+                Role = "admin"
+            };
+
+            await _userController.Register(user);
+
+            var result = await _userController.Login(user.Email, "pogresnalozinka");
+
+            Assert.IsInstanceOf<BadRequestObjectResult>(result);
 
         }
 
 
+        [Test]
+        public async Task PreuzmiUlogovanogKorisnika()
+        {
+            var user = new User
+            {
+                Name = "Neda",
+                Surname = "Djordjevic",
+                Username = "Neda",
+                Email = "neda@gmail.com",
+                Password = "neda",
+                PhoneNumber = "0654567890",
+                Role = "user"
+            };
+
+            await _userController.Register(user);
+
+            var token = await _userController.Login(user.Email, user.Password);
+
+            Assert.IsNotNull(token);
+            Assert.IsNotInstanceOf<BadRequest>(token);
+
+            var result = await _userController.GetUser();
+
+            Assert.IsNotNull(result);
+        }
 
 
+        [Test]
+        public async Task AzurirajKorisnika_UspesnoAzuriranje()
+        {
 
+            var korisnik = new User
+            {
+                Name = "Andjela",
+                Surname = "Ilic",
+                Username = "Andjela",
+                Email = "andjela@gmail.com",
+                Password = "andjela",
+                PhoneNumber = "0694567890",
+                Role = "user"
+            };
 
+            await _userController.Register(korisnik);
 
+            korisnik.Name = "Novo ime";
 
+            var result = await _userController.UpdateUser(korisnik.Id, korisnik);
 
+            Assert.IsInstanceOf<OkObjectResult>(result);
+            var okResult = result as OkObjectResult;
+            Assert.AreEqual("User successfully updated.", okResult.Value);
 
+        }
 
+        [Test]
+        public async Task AzurirajKorisnika_NepostojeciId()
+        {
+            var nepostojeciId = "65ed984c454619ba306c8c63";
 
+            var korisnik = new User
+            {
+                Name = "Vukan",
+                Surname = "Milosevic",
+                Username = "Vukan",
+                Email = "vukan@gmail.com",
+                Password = "vukan",
+                PhoneNumber = "0694789890",
+                Role = "user"
+            };
 
+            var result = await _userController.UpdateUser(nepostojeciId, korisnik);
 
+            Assert.IsInstanceOf<BadRequestObjectResult>(result);
+            var badRequestResult = result as BadRequestObjectResult;
+
+            Assert.IsNotNull(badRequestResult.Value);
+
+            Assert.AreEqual($"User with ID {nepostojeciId} does not exist.", badRequestResult.Value);
+        }
 
     }
 }

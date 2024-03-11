@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7+KIfBKMs5wqIgjmRbNzcICCRRG0C3vtT7Lr9xBWUOxWPs5dc5KMt+DWQlnbdA7vafxOUalK8l3UCIdFx9837w==",
+  "dgSpecHash": "/7VoJTT0ndTcA4oPe8+WyyuLvham89Ey3IEfZbjGkrFSr/2LO54Z+nfJXxzF2UFHPd4N0INjodFe1LiTxe4B8A==",
   "success": true,
-  "projectFilePath": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseGit\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\DeliverEase.csproj",
+  "projectFilePath": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\DeliverEase.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mlade\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\mlade\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
@@ -39,12 +39,5 @@
     "C:\\Users\\mlade\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
     "C:\\Users\\mlade\\.nuget\\packages\\zstdsharp.port\\0.7.3\\zstdsharp.port.0.7.3.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseGit\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

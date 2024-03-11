@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DeliverEase")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< Updated upstream
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9895865fe6640cd8f8d1ca08e641f8c78327e443")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2a547e359b44930b8eef0d50fbcaad4552f6b7d")]
->>>>>>> Stashed changes
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+50aed3f45fbce39dbd309ab06518dfcec09d73e0")]
 [assembly: System.Reflection.AssemblyProductAttribute("DeliverEase")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DeliverEase")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

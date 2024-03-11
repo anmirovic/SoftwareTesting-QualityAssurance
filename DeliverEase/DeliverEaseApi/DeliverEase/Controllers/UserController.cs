@@ -128,7 +128,7 @@ namespace DeliverEase.Controllers
 
                 if (user == null)
                 {
-                    return NotFound($"User with ID {id} does not exist.");
+                    return BadRequest($"User with ID {id} does not exist.");
                 }
 
                 userIn.Id = id;

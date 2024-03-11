@@ -42,7 +42,7 @@ namespace DeliverEase.Controllers
                 var review = await _reviewService.GetReviewByIdAsync(id);
                 if (review == null)
                 {
-                    return NotFound($"Review with ID {id} not found.");
+                    return BadRequest($"Review with ID {id} not found.");
                 }
                 return Ok(review);
             }
@@ -60,7 +60,7 @@ namespace DeliverEase.Controllers
                 review.Id = null;
                 var reviewId = await _reviewService.AddReviewAsync(review);
                 await UpdateRestaurantRating(review.RestaurantId);
-                return Ok(reviewId);
+                return Ok(review);
             }
             catch (Exception ex)
             {
@@ -76,7 +76,7 @@ namespace DeliverEase.Controllers
                 var existingReview = await _reviewService.GetReviewByIdAsync(id);
                 if (existingReview == null)
                 {
-                    return NotFound($"Review with ID {id} not found.");
+                    return BadRequest($"Review with ID {id} not found.");
                 }
 
                 review.RestaurantId=existingReview.RestaurantId;
@@ -102,7 +102,7 @@ namespace DeliverEase.Controllers
                 var existingReview = await _reviewService.GetReviewByIdAsync(id);
                 if (existingReview == null)
                 {
-                    return NotFound($"Review with ID {id} not found.");
+                    return BadRequest($"Review with ID {id} not found.");
                 }
 
                 await _reviewService.DeleteReviewAsync(id);
@@ -147,7 +147,7 @@ namespace DeliverEase.Controllers
 
                 if (ratings == null || ratings.Count == 0)
                 {
-                    return NotFound($"No ratings found for restaurant with ID {restaurantId}.");
+                    return BadRequest($"No ratings found for restaurant with ID {restaurantId}.");
                 }
 
                 return Ok(ratings);
