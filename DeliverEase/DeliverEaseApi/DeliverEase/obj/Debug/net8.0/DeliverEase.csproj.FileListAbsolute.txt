@@ -53,6 +53,7 @@ D:\Elektronski fakultet\IV\Testiranje i kvalitet softvera\DeliverEase\DeliverEas
 D:\Elektronski fakultet\IV\Testiranje i kvalitet softvera\DeliverEase\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\DeliverEase.genruntimeconfig.cache
 D:\Elektronski fakultet\IV\Testiranje i kvalitet softvera\DeliverEase\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\ref\DeliverEase.dll
 D:\Elektronski fakultet\IV\Testiranje i kvalitet softvera\DeliverEase\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\DeliverE.9472DE91.Up2Date
+<<<<<<< HEAD
 D:\Elektronski fakultet\IV\Testiranje i kvalitet softvera\DeliverEaseGit\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\appsettings.Development.json
 D:\Elektronski fakultet\IV\Testiranje i kvalitet softvera\DeliverEaseGit\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\appsettings.json
 D:\Elektronski fakultet\IV\Testiranje i kvalitet softvera\DeliverEaseGit\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\DeliverEase.exe
@@ -109,3 +110,61 @@ D:\Elektronski fakultet\IV\Testiranje i kvalitet softvera\DeliverEaseGit\TIKS\De
 D:\Elektronski fakultet\IV\Testiranje i kvalitet softvera\DeliverEaseGit\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\DeliverEase.pdb
 D:\Elektronski fakultet\IV\Testiranje i kvalitet softvera\DeliverEaseGit\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\DeliverEase.genruntimeconfig.cache
 D:\Elektronski fakultet\IV\Testiranje i kvalitet softvera\DeliverEaseGit\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\ref\DeliverEase.dll
+=======
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\appsettings.Development.json
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\appsettings.json
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\DeliverEase.exe
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\DeliverEase.deps.json
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\DeliverEase.runtimeconfig.json
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\DeliverEase.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\DeliverEase.pdb
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\AWSSDK.Core.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\AWSSDK.SecurityToken.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\DnsClient.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\MongoDB.Bson.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\MongoDB.Driver.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\MongoDB.Driver.Core.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\MongoDB.Libmongocrypt.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\SharpCompress.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\Snappier.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\ZstdSharp.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\runtimes\linux\native\libmongocrypt.so
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\runtimes\osx\native\libmongocrypt.dylib
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\bin\Debug\net8.0\runtimes\win\native\mongocrypt.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\DeliverEase.csproj.AssemblyReference.cache
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\DeliverEase.GeneratedMSBuildEditorConfig.editorconfig
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\DeliverEase.AssemblyInfoInputs.cache
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\DeliverEase.AssemblyInfo.cs
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\DeliverEase.csproj.CoreCompileInputs.cache
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\DeliverEase.MvcApplicationPartsAssemblyInfo.cs
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\DeliverEase.MvcApplicationPartsAssemblyInfo.cache
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\DeliverEase.sourcelink.json
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\staticwebassets.build.json
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\staticwebassets.development.json
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\staticwebassets\msbuild.DeliverEase.Microsoft.AspNetCore.StaticWebAssets.props
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\staticwebassets\msbuild.build.DeliverEase.props
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.DeliverEase.props
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.DeliverEase.props
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\staticwebassets.pack.json
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\scopedcss\bundle\DeliverEase.styles.css
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\DeliverE.9472DE91.Up2Date
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\DeliverEase.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\refint\DeliverEase.dll
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\DeliverEase.pdb
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\DeliverEase.genruntimeconfig.cache
+D:\TIKS projekat\TIKS\DeliverEase\DeliverEaseApi\DeliverEase\obj\Debug\net8.0\ref\DeliverEase.dll
+>>>>>>> a2a547e359b44930b8eef0d50fbcaad4552f6b7d
