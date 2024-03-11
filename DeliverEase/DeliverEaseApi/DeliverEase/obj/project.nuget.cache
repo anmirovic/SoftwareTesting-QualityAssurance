@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lbwVAedlPxhsS1JtM1ufmbFomjpqXCfwX3pjcZ5DqDqmQIPqGfbwitpCqpXBb6vA2kgiw0hvAYGzgCCL45o8yA==",
+  "dgSpecHash": "7+KIfBKMs5wqIgjmRbNzcICCRRG0C3vtT7Lr9xBWUOxWPs5dc5KMt+DWQlnbdA7vafxOUalK8l3UCIdFx9837w==",
   "success": true,
-  "projectFilePath": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEase\\DeliverEase\\DeliverEaseApi\\DeliverEase\\DeliverEase.csproj",
+  "projectFilePath": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseGit\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\DeliverEase.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mlade\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\mlade\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
