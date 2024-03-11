@@ -2563,11 +2563,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEase\\DeliverEase\\DeliverEaseApi\\NUnitTests\\NUnitTests.csproj",
+      "projectUniqueName": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseGit\\TIKS\\DeliverEase\\DeliverEaseApi\\NUnitTests\\NUnitTests.csproj",
       "projectName": "NUnitTests",
-      "projectPath": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEase\\DeliverEase\\DeliverEaseApi\\NUnitTests\\NUnitTests.csproj",
+      "projectPath": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseGit\\TIKS\\DeliverEase\\DeliverEaseApi\\NUnitTests\\NUnitTests.csproj",
       "packagesPath": "C:\\Users\\mlade\\.nuget\\packages\\",
-      "outputPath": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEase\\DeliverEase\\DeliverEaseApi\\NUnitTests\\obj\\",
+      "outputPath": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseGit\\TIKS\\DeliverEase\\DeliverEaseApi\\NUnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mlade\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2584,8 +2584,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEase\\DeliverEase\\DeliverEaseApi\\DeliverEase\\DeliverEase.csproj": {
-              "projectPath": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEase\\DeliverEase\\DeliverEaseApi\\DeliverEase\\DeliverEase.csproj"
+            "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseGit\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\DeliverEase.csproj": {
+              "projectPath": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseGit\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\DeliverEase.csproj"
             }
           }
         }
