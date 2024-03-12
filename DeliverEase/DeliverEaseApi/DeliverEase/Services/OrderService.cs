@@ -35,7 +35,7 @@ namespace DeliverEase.Services
             return orders;
         }
 
-        public async Task<string> CreateOrderAsync(string restaurantId, string userId, List<string> mealIds)
+        public async Task<Order> CreateOrderAsync(string restaurantId, string userId, List<string> mealIds)
         {
             var restaurant = await _restaurantService.GetRestaurantByIdAsync(restaurantId);
             if (restaurant == null)
@@ -79,7 +79,7 @@ namespace DeliverEase.Services
 
             await _orders.InsertOneAsync(newOrder);
 
-            return newOrder.Id;
+            return newOrder;
         }
 
 

@@ -40,7 +40,7 @@ namespace DeliverEase.Controllers
                 var order = await _orderService.GetOrderByIdAsync(id);
                 if (order == null)
                 {
-                    return NotFound($"Order with ID {id} does not exist.");
+                    return BadRequest($"Order with ID {id} does not exist.");
                 }
                 return Ok(order);
             }
@@ -56,6 +56,10 @@ namespace DeliverEase.Controllers
             try
             {
                 var orders = await _orderService.GetOrdersForUserAsync(userId);
+                if (orders == null || orders.Count == 0)
+                {
+                    return BadRequest($"User with ID {userId} does not exist.");
+                }
                 return Ok(orders);
             }
             catch (Exception ex)
@@ -70,15 +74,20 @@ namespace DeliverEase.Controllers
         {
             try
             {
-                var orderId = await _orderService.CreateOrderAsync(restaurantId, userId, mealIds);
-                
-                if (orderId != null)
+                if (mealIds == null || mealIds.Count == 0)
                 {
-                    return Ok(orderId);
+                    return BadRequest("No meals were added to the order.");
+                }
+
+                var order = await _orderService.CreateOrderAsync(restaurantId, userId, mealIds);
+
+                if (order != null)
+                {
+                    return Ok(order);
                 }
                 else
                 {
-                    return NotFound("Restaurant or user not found, or some meals were not added to the order.");
+                    return BadRequest("Restaurant or user not found, or some meals were not added to the order.");
                 }
             }
             catch (Exception ex)
@@ -89,7 +98,7 @@ namespace DeliverEase.Controllers
 
 
         [HttpPut("UpdateOrder")]
-        public async Task<ActionResult<Order>> UpdateOrder(string id, List<string> mealIds)
+        public async Task<ActionResult> UpdateOrder(string id, List<string> mealIds)
         {
             try
             {
@@ -98,10 +107,10 @@ namespace DeliverEase.Controllers
                 var updatedOrder = await _orderService.GetOrderByIdAsync(id);
                 if (updatedOrder == null)
                 {
-                    return NotFound();
+                    return BadRequest();
                 }
 
-                return Ok(updatedOrder);
+                return Ok("Order successfully updated.");
             }
             catch (Exception ex)
             {
@@ -117,7 +126,7 @@ namespace DeliverEase.Controllers
                 var order = await _orderService.GetOrderByIdAsync(id);
                 if (order == null)
                 {
-                    return NotFound($"Order with ID {id} does not exist.");
+                    return BadRequest($"Order with ID {id} does not exist.");
                 }
 
                 await _orderService.DeleteOrderAsync(id);
