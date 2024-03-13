@@ -1592,27 +1592,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\anastasija\\.nuget\\packages\\": {}
+    "C:\\Users\\mlade\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< Updated upstream
       "projectUniqueName": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\DeliverEase.csproj",
       "projectName": "DeliverEase",
       "projectPath": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\DeliverEase.csproj",
       "packagesPath": "C:\\Users\\mlade\\.nuget\\packages\\",
       "outputPath": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\obj\\",
-=======
-      "projectUniqueName": "D:\\TIKS projekat\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\DeliverEase.csproj",
-      "projectName": "DeliverEase",
-      "projectPath": "D:\\TIKS projekat\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\DeliverEase.csproj",
-      "packagesPath": "C:\\Users\\anastasija\\.nuget\\packages\\",
-      "outputPath": "D:\\TIKS projekat\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\obj\\",
->>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\anastasija\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mlade\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

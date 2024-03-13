@@ -20,7 +20,7 @@ namespace DeliverEase.Controllers
         }
         [AllowAnonymous]
         [HttpPost("Register")]
-        public async Task<IActionResult> Register([FromForm] User newUser)
+        public async Task<IActionResult> Register(User newUser)
         {
             try
             {

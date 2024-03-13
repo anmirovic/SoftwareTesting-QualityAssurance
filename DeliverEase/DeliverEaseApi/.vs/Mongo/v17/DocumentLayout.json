@@ -1,11 +1,26 @@
 {
   "Version": 1,
-<<<<<<< Updated upstream
   "WorkspaceRootPath": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|d:\\elektronski fakultet\\iv\\testiranje i kvalitet softvera\\delivereasetestproject\\tiks\\deliverease\\delivereaseapi\\deliverease\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|solutionrelative:deliverease\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|d:\\elektronski fakultet\\iv\\testiranje i kvalitet softvera\\delivereasetestproject\\tiks\\deliverease\\delivereaseapi\\deliverease\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|solutionrelative:deliverease\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|d:\\elektronski fakultet\\iv\\testiranje i kvalitet softvera\\delivereasetestproject\\tiks\\deliverease\\delivereaseapi\\deliverease\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|solutionrelative:deliverease\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{396D064F-0554-4A93-88A0-C449DBE644B1}|NUnitTests\\NUnitTests.csproj|d:\\elektronski fakultet\\iv\\testiranje i kvalitet softvera\\delivereasetestproject\\tiks\\deliverease\\delivereaseapi\\nunittests\\usertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{396D064F-0554-4A93-88A0-C449DBE644B1}|NUnitTests\\NUnitTests.csproj|solutionrelative:nunittests\\usertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|d:\\elektronski fakultet\\iv\\testiranje i kvalitet softvera\\delivereasetestproject\\tiks\\deliverease\\delivereaseapi\\deliverease\\controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|solutionrelative:deliverease\\controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{396D064F-0554-4A93-88A0-C449DBE644B1}|NUnitTests\\NUnitTests.csproj|d:\\elektronski fakultet\\iv\\testiranje i kvalitet softvera\\delivereasetestproject\\tiks\\deliverease\\delivereaseapi\\nunittests\\reviewtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -18,14 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{396D064F-0554-4A93-88A0-C449DBE644B1}|NUnitTests\\NUnitTests.csproj|d:\\elektronski fakultet\\iv\\testiranje i kvalitet softvera\\delivereasetestproject\\tiks\\deliverease\\delivereaseapi\\nunittests\\mealtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{396D064F-0554-4A93-88A0-C449DBE644B1}|NUnitTests\\NUnitTests.csproj|solutionrelative:nunittests\\mealtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|d:\\elektronski fakultet\\iv\\testiranje i kvalitet softvera\\delivereasetestproject\\tiks\\deliverease\\delivereaseapi\\deliverease\\controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|solutionrelative:deliverease\\controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|d:\\elektronski fakultet\\iv\\testiranje i kvalitet softvera\\delivereasetestproject\\tiks\\deliverease\\delivereaseapi\\deliverease\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|solutionrelative:deliverease\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|d:\\elektronski fakultet\\iv\\testiranje i kvalitet softvera\\delivereasetestproject\\tiks\\deliverease\\delivereaseapi\\deliverease\\services\\reviewservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -44,16 +51,8 @@
       "RelativeMoniker": "D:0:0:{396D064F-0554-4A93-88A0-C449DBE644B1}|NUnitTests\\NUnitTests.csproj|solutionrelative:nunittests\\using.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|d:\\elektronski fakultet\\iv\\testiranje i kvalitet softvera\\delivereasetestproject\\tiks\\deliverease\\delivereaseapi\\deliverease\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|solutionrelative:deliverease\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|d:\\elektronski fakultet\\iv\\testiranje i kvalitet softvera\\delivereasetestproject\\tiks\\deliverease\\delivereaseapi\\deliverease\\helpers\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|solutionrelative:deliverease\\helpers\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|d:\\elektronski fakultet\\iv\\testiranje i kvalitet softvera\\delivereasetestproject\\tiks\\deliverease\\delivereaseapi\\deliverease\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|solutionrelative:deliverease\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|d:\\elektronski fakultet\\iv\\testiranje i kvalitet softvera\\delivereasetestproject\\tiks\\deliverease\\delivereaseapi\\deliverease\\models\\meal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,37 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|d:\\elektronski fakultet\\iv\\testiranje i kvalitet softvera\\delivereasetestproject\\tiks\\deliverease\\delivereaseapi\\deliverease\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|solutionrelative:deliverease\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-=======
-  "WorkspaceRootPath": "D:\\TIKS projekat\\TIKS\\DeliverEase\\DeliverEaseApi\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{396D064F-0554-4A93-88A0-C449DBE644B1}|NUnitTests\\NUnitTests.csproj|d:\\tiks projekat\\tiks\\deliverease\\delivereaseapi\\nunittests\\ordertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{396D064F-0554-4A93-88A0-C449DBE644B1}|NUnitTests\\NUnitTests.csproj|solutionrelative:nunittests\\ordertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|d:\\tiks projekat\\tiks\\deliverease\\delivereaseapi\\deliverease\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|solutionrelative:deliverease\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|d:\\tiks projekat\\tiks\\deliverease\\delivereaseapi\\deliverease\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|solutionrelative:deliverease\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{396D064F-0554-4A93-88A0-C449DBE644B1}|NUnitTests\\NUnitTests.csproj|d:\\tiks projekat\\tiks\\deliverease\\delivereaseapi\\nunittests\\restauranttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{396D064F-0554-4A93-88A0-C449DBE644B1}|NUnitTests\\NUnitTests.csproj|solutionrelative:nunittests\\restauranttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|d:\\tiks projekat\\tiks\\deliverease\\delivereaseapi\\deliverease\\services\\restaurantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|solutionrelative:deliverease\\services\\restaurantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|d:\\tiks projekat\\tiks\\deliverease\\delivereaseapi\\deliverease\\controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|solutionrelative:deliverease\\controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|d:\\tiks projekat\\tiks\\deliverease\\delivereaseapi\\deliverease\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EBBFFA82-DEC7-44B0-978D-55DAB7B189EC}|DeliverEase\\DeliverEase.csproj|solutionrelative:deliverease\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
->>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -122,45 +90,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< Updated upstream
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 10,
           "Children": [
             {
-=======
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OrderTests.cs",
-              "DocumentMoniker": "D:\\TIKS projekat\\TIKS\\DeliverEase\\DeliverEaseApi\\NUnitTests\\OrderTests.cs",
-              "RelativeDocumentMoniker": "NUnitTests\\OrderTests.cs",
-              "ToolTip": "D:\\TIKS projekat\\TIKS\\DeliverEase\\DeliverEaseApi\\NUnitTests\\OrderTests.cs",
-              "RelativeToolTip": "NUnitTests\\OrderTests.cs",
-              "ViewState": "AQIAAI8BAAAAAAAAAAAUwJcBAABIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T20:13:27.522Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
->>>>>>> Stashed changes
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-<<<<<<< Updated upstream
-              "Title": "MealTests.cs",
-              "DocumentMoniker": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\NUnitTests\\MealTests.cs",
-              "RelativeDocumentMoniker": "NUnitTests\\MealTests.cs",
-              "ToolTip": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\NUnitTests\\MealTests.cs",
-              "RelativeToolTip": "NUnitTests\\MealTests.cs",
-              "ViewState": "AQIAABQBAAAAAAAAAAAAACYBAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T20:43:27.414Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -172,130 +106,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RestaurantController.cs",
-              "DocumentMoniker": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Controllers\\RestaurantController.cs",
-              "RelativeDocumentMoniker": "DeliverEase\\Controllers\\RestaurantController.cs",
-              "ToolTip": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Controllers\\RestaurantController.cs",
-              "RelativeToolTip": "DeliverEase\\Controllers\\RestaurantController.cs",
-              "ViewState": "AQIAAGwAAAAAAAAAAAAAAJIAAABQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T21:23:55.869Z",
-              "EditorCaption": ""
-=======
-              "Title": "RestaurantTests.cs",
-              "DocumentMoniker": "D:\\TIKS projekat\\TIKS\\DeliverEase\\DeliverEaseApi\\NUnitTests\\RestaurantTests.cs",
-              "RelativeDocumentMoniker": "NUnitTests\\RestaurantTests.cs",
-              "ToolTip": "D:\\TIKS projekat\\TIKS\\DeliverEase\\DeliverEaseApi\\NUnitTests\\RestaurantTests.cs",
-              "RelativeToolTip": "NUnitTests\\RestaurantTests.cs",
-              "ViewState": "AQIAACwBAAAAAAAAAAAiwDsBAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T20:16:02.248Z"
->>>>>>> Stashed changes
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-<<<<<<< Updated upstream
-              "Title": "ReviewTests.cs",
-              "DocumentMoniker": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\NUnitTests\\ReviewTests.cs",
-              "RelativeDocumentMoniker": "NUnitTests\\ReviewTests.cs",
-              "ToolTip": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\NUnitTests\\ReviewTests.cs",
-              "RelativeToolTip": "NUnitTests\\ReviewTests.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T20:23:23.256Z",
-=======
-              "Title": "OrderService.cs",
-              "DocumentMoniker": "D:\\TIKS projekat\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Services\\OrderService.cs",
-              "RelativeDocumentMoniker": "DeliverEase\\Services\\OrderService.cs",
-              "ToolTip": "D:\\TIKS projekat\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Services\\OrderService.cs",
-              "RelativeToolTip": "DeliverEase\\Services\\OrderService.cs",
-              "ViewState": "AQIAAHYAAAAAAAAAAAAkwIoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T20:15:34.868Z",
->>>>>>> Stashed changes
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-<<<<<<< Updated upstream
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "UserTests.cs",
               "DocumentMoniker": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\NUnitTests\\UserTests.cs",
               "RelativeDocumentMoniker": "NUnitTests\\UserTests.cs",
               "ToolTip": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\NUnitTests\\UserTests.cs",
               "RelativeToolTip": "NUnitTests\\UserTests.cs",
-              "ViewState": "AQIAAI8BAAAAAAAAAAAAAJ8BAAAjAAAA",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAAAHwAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T17:19:48.368Z",
-              "EditorCaption": ""
-=======
-              "DocumentIndex": 6,
-              "Title": "Order.cs",
-              "DocumentMoniker": "D:\\TIKS projekat\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "DeliverEase\\Models\\Order.cs",
-              "ToolTip": "D:\\TIKS projekat\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Models\\Order.cs",
-              "RelativeToolTip": "DeliverEase\\Models\\Order.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAmwA4AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T20:15:40.112Z"
->>>>>>> Stashed changes
+              "WhenOpened": "2024-03-11T17:19:48.368Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-<<<<<<< Updated upstream
-              "Title": "ReviewController.cs",
-              "DocumentMoniker": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Controllers\\ReviewController.cs",
-              "RelativeDocumentMoniker": "DeliverEase\\Controllers\\ReviewController.cs",
-              "ToolTip": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Controllers\\ReviewController.cs",
-              "RelativeToolTip": "DeliverEase\\Controllers\\ReviewController.cs",
-              "ViewState": "AQIAAIcAAAAAAAAAAAAAAJMAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T17:19:48.44Z",
-              "EditorCaption": ""
-=======
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "D:\\TIKS projekat\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "DeliverEase\\Controllers\\OrderController.cs",
-              "ToolTip": "D:\\TIKS projekat\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "DeliverEase\\Controllers\\OrderController.cs",
-              "ViewState": "AQIAAHwAAAAAAAAAAAAkwJAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T20:15:36.793Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RestaurantService.cs",
-              "DocumentMoniker": "D:\\TIKS projekat\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Services\\RestaurantService.cs",
-              "RelativeDocumentMoniker": "DeliverEase\\Services\\RestaurantService.cs",
-              "ToolTip": "D:\\TIKS projekat\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Services\\RestaurantService.cs",
-              "RelativeToolTip": "DeliverEase\\Services\\RestaurantService.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAMwCYAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T20:15:32.654Z"
->>>>>>> Stashed changes
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-<<<<<<< Updated upstream
+              "DocumentIndex": 1,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "DeliverEase\\Controllers\\UserController.cs",
               "ToolTip": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Controllers\\UserController.cs",
               "RelativeToolTip": "DeliverEase\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAAAHwAAAAPAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB0AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T17:19:48.415Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T17:19:48.415Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "ReviewService.cs",
               "DocumentMoniker": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Services\\ReviewService.cs",
               "RelativeDocumentMoniker": "DeliverEase\\Services\\ReviewService.cs",
@@ -303,12 +138,11 @@
               "RelativeToolTip": "DeliverEase\\Services\\ReviewService.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T20:45:50.917Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T20:45:50.917Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "RestaurantTests.cs",
               "DocumentMoniker": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\NUnitTests\\RestaurantTests.cs",
               "RelativeDocumentMoniker": "NUnitTests\\RestaurantTests.cs",
@@ -316,12 +150,84 @@
               "RelativeToolTip": "NUnitTests\\RestaurantTests.cs",
               "ViewState": "AQIAAC0AAAAAAAAAAAAAADgAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T20:40:38.078Z",
+              "WhenOpened": "2024-03-11T20:40:38.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "DeliverEase\\Services\\UserService.cs",
+              "ToolTip": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Services\\UserService.cs",
+              "RelativeToolTip": "DeliverEase\\Services\\UserService.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACUAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T17:19:48.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RestaurantController.cs",
+              "DocumentMoniker": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Controllers\\RestaurantController.cs",
+              "RelativeDocumentMoniker": "DeliverEase\\Controllers\\RestaurantController.cs",
+              "ToolTip": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Controllers\\RestaurantController.cs",
+              "RelativeToolTip": "DeliverEase\\Controllers\\RestaurantController.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAAAIAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T21:23:55.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReviewTests.cs",
+              "DocumentMoniker": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\NUnitTests\\ReviewTests.cs",
+              "RelativeDocumentMoniker": "NUnitTests\\ReviewTests.cs",
+              "ToolTip": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\NUnitTests\\ReviewTests.cs",
+              "RelativeToolTip": "NUnitTests\\ReviewTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T20:23:23.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Models\\User.cs",
+              "RelativeDocumentMoniker": "DeliverEase\\Models\\User.cs",
+              "ToolTip": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Models\\User.cs",
+              "RelativeToolTip": "DeliverEase\\Models\\User.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAAsAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T17:19:48.384Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
+              "Title": "ReviewController.cs",
+              "DocumentMoniker": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Controllers\\ReviewController.cs",
+              "RelativeDocumentMoniker": "DeliverEase\\Controllers\\ReviewController.cs",
+              "ToolTip": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Controllers\\ReviewController.cs",
+              "RelativeToolTip": "DeliverEase\\Controllers\\ReviewController.cs",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAAAJMAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T17:19:48.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MealTests.cs",
+              "DocumentMoniker": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\NUnitTests\\MealTests.cs",
+              "RelativeDocumentMoniker": "NUnitTests\\MealTests.cs",
+              "ToolTip": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\NUnitTests\\MealTests.cs",
+              "RelativeToolTip": "NUnitTests\\MealTests.cs",
+              "ViewState": "AQIAABQBAAAAAAAAAAAAACYBAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-11T20:43:27.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Using.cs",
               "DocumentMoniker": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\NUnitTests\\Using.cs",
               "RelativeDocumentMoniker": "NUnitTests\\Using.cs",
@@ -329,38 +235,11 @@
               "RelativeToolTip": "NUnitTests\\Using.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T17:19:48.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T17:19:48.432Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "DeliverEase\\Services\\UserService.cs",
-              "ToolTip": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Services\\UserService.cs",
-              "RelativeToolTip": "DeliverEase\\Services\\UserService.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAAAEAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T17:19:48.415Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Models\\User.cs",
-              "RelativeDocumentMoniker": "DeliverEase\\Models\\User.cs",
-              "ToolTip": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Models\\User.cs",
-              "RelativeToolTip": "DeliverEase\\Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T17:19:48.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Review.cs",
               "DocumentMoniker": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Models\\Review.cs",
               "RelativeDocumentMoniker": "DeliverEase\\Models\\Review.cs",
@@ -368,8 +247,7 @@
               "RelativeToolTip": "DeliverEase\\Models\\Review.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T17:19:48.448Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T17:19:48.448Z"
             },
             {
               "$type": "Document",
@@ -380,8 +258,7 @@
               "ToolTip": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\DeliverEase.csproj",
               "RelativeToolTip": "DeliverEase\\DeliverEase.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-11T17:19:48.256Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T17:19:48.256Z"
             },
             {
               "$type": "Document",
@@ -397,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "JwtService.cs",
               "DocumentMoniker": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Helpers\\JwtService.cs",
               "RelativeDocumentMoniker": "DeliverEase\\Helpers\\JwtService.cs",
@@ -405,8 +282,7 @@
               "RelativeToolTip": "DeliverEase\\Helpers\\JwtService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T17:19:48.44Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-11T17:19:48.44Z"
             },
             {
               "$type": "Document",
@@ -467,16 +343,6 @@
               "ViewState": "AQIAABwAAAAAAAAAAAAYwH8AAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-11T17:19:48.432Z"
-=======
-              "Title": "RestaurantController.cs",
-              "DocumentMoniker": "D:\\TIKS projekat\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Controllers\\RestaurantController.cs",
-              "RelativeDocumentMoniker": "DeliverEase\\Controllers\\RestaurantController.cs",
-              "ToolTip": "D:\\TIKS projekat\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\Controllers\\RestaurantController.cs",
-              "RelativeToolTip": "DeliverEase\\Controllers\\RestaurantController.cs",
-              "ViewState": "AQIAAFYAAAAAAAAAAIA4wGMAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-11T20:15:29.393Z"
->>>>>>> Stashed changes
             }
           ]
         }

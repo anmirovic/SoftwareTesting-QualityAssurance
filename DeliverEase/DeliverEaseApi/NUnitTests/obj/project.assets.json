@@ -2558,27 +2558,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\anastasija\\.nuget\\packages\\": {}
+    "C:\\Users\\mlade\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< Updated upstream
       "projectUniqueName": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\NUnitTests\\NUnitTests.csproj",
       "projectName": "NUnitTests",
       "projectPath": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\NUnitTests\\NUnitTests.csproj",
       "packagesPath": "C:\\Users\\mlade\\.nuget\\packages\\",
       "outputPath": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\NUnitTests\\obj\\",
-=======
-      "projectUniqueName": "D:\\TIKS projekat\\TIKS\\DeliverEase\\DeliverEaseApi\\NUnitTests\\NUnitTests.csproj",
-      "projectName": "NUnitTests",
-      "projectPath": "D:\\TIKS projekat\\TIKS\\DeliverEase\\DeliverEaseApi\\NUnitTests\\NUnitTests.csproj",
-      "packagesPath": "C:\\Users\\anastasija\\.nuget\\packages\\",
-      "outputPath": "D:\\TIKS projekat\\TIKS\\DeliverEase\\DeliverEaseApi\\NUnitTests\\obj\\",
->>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\anastasija\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mlade\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2592,13 +2584,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-<<<<<<< Updated upstream
             "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\DeliverEase.csproj": {
               "projectPath": "D:\\Elektronski fakultet\\IV\\Testiranje i kvalitet softvera\\DeliverEaseTestProject\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\DeliverEase.csproj"
-=======
-            "D:\\TIKS projekat\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\DeliverEase.csproj": {
-              "projectPath": "D:\\TIKS projekat\\TIKS\\DeliverEase\\DeliverEaseApi\\DeliverEase\\DeliverEase.csproj"
->>>>>>> Stashed changes
             }
           }
         }
