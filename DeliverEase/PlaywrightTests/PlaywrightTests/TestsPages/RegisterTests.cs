@@ -56,12 +56,14 @@ public class RegisterTests : PageTest
         await page.GetByPlaceholder("Lozinka").FillAsync("janko");
         await page.GetByPlaceholder("Telefon").FillAsync("0652859632");
 
+       
         await page.ScreenshotAsync(new() { Path = "../../../Slike/RegisterUser2.png" });
 
         await page.GetByPlaceholder("SignUp").ClickAsync();
         await page.GotoAsync($"http://localhost:5173/login");
 
         await page.ScreenshotAsync(new() { Path = "../../../Slike/RegisterUser3.png" });
+
         
     }
 

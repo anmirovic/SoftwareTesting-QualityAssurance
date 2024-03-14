@@ -78,6 +78,7 @@ namespace PlaywrightTests.TestsAPI
             Assert.That(response.Status, Is.EqualTo(200));
             var textResponse = await response.TextAsync();
             Assert.IsNotNull(textResponse);
+            Assert.That(textResponse, Does.Contain("ID nove agencije je = "));
         }
 
 

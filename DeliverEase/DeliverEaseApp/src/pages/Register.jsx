@@ -34,9 +34,7 @@ const Register= () => {
             if (response.ok) {
                 navigate('/login');
             }
-        }) 
-
-        
+        })       
     };
     
     return(
