@@ -36,7 +36,7 @@ const Login = (props) => {
                     <label >Password</label>
                 </div>
                 <Link className="nav-link login-label" to={"/register"}>Don't have an account?</Link>
-                <button className="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+                <button className="btn btn-primary w-100 py-2" placeholder="SignIn" type="submit">Sign in</button>
             </form>
         </div>
     );

@@ -163,7 +163,7 @@ const Account = (props) => {
             </div>
             {role==='admin'&&(
                 <div>
-                    <Link to={'/addrestaurant'}>Add Restaurant</Link>
+                    <Link to={'/addrestaurant'} placeholder="AddRestaurant">Add Restaurant</Link>
                     <div><AdminRestaurants/></div>
                 </div>
             )}

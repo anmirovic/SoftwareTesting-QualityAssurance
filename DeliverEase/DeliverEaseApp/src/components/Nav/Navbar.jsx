@@ -15,13 +15,13 @@ const Navbar = (props) => {
         {props.user === undefined || props.user === null?
           (
           <div className="navbar-login">
-            <Link to={"/login"} className="btn btn-primary">Login </Link>
-            <Link to={"/register"} className="btn btn-primary">Register</Link>
+            <Link to={"/login"} placeholder= "Login" className="btn btn-primary">Login </Link>
+            <Link to={"/register"} placeholder= "Register" className="btn btn-primary">Register</Link>
           </div>
           ):
           (
           <div>
-            <Link to={"/account"} className="btn btn-primary me-3">{props.user.username}</Link>
+            <Link to={"/account"} placeholder= "Account" className="btn btn-primary me-3">{props.user.username}</Link>
           </div>
           )
         }

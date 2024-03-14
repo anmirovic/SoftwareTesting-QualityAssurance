@@ -11,11 +11,24 @@ const AddRestaurant = () => {
     const [mealDescription, setMealDescription] = useState('');
     const [mealPrice, setMealPrice] = useState();
 
+    const [nameError, setNameError] = useState('');
+    const [addressError, setAddressError] = useState('');
+
     const navigate = useNavigate();
 
 
     const submit = async (e) => {
         e.preventDefault();
+
+        if (!name) {
+            setNameError('Please fill Restaurant name.');
+            return;
+        }
+
+        if (!address) {
+            setAddressError('Please fill Restaurant address.');
+            return;
+        }
 
         const newRestaurant = {
             name: name,
@@ -51,6 +64,9 @@ const AddRestaurant = () => {
             setMealDescription('');
             setMealPrice(0);
         }
+        else {
+            setError('Please fill in all fields for the meal.');
+        }
     }
     
     return(
@@ -59,12 +75,14 @@ const AddRestaurant = () => {
                 <div className="form-floating input-row">
                     <input className="form-control" placeholder="Name" required onChange={e => setName(e.target.value)}/>
                     <label >Name</label>
+                    {nameError && <div className="error">{nameError}</div>}
                 </div>
                 <div className="form-floating input-row">
                     <input className="form-control" placeholder="Address" required onChange={e => setAddress(e.target.value)}/>
                     <label >Address</label>
+                    {addressError && <div className="error">{addressError}</div>}
                 </div>
-                <button onClick={submit}>Create Restaurant</button>
+                <button placeholder="Create Restaurant" onClick={submit}>Create Restaurant</button>
                 {meals.map((meal, id) => {
                     return(
                         <div key={id}>
@@ -84,19 +102,19 @@ const AddRestaurant = () => {
                     Add another meal
                     <div>
                         <div className="form-floating input-row">
-                            <input className="form-control" placeholder="Meal name" value={mealName} onChange={e => setMealName(e.target.value)}/>
+                            <input className="form-control" placeholder="Ime jela" value={mealName} onChange={e => setMealName(e.target.value)}/>
                             <label >Meal name</label>
                         </div>
                         <div className="form-floating input-row">
-                            <input className="form-control" placeholder="Meal description" value={mealDescription} onChange={e => setMealDescription(e.target.value)}/>
+                            <input className="form-control" placeholder="Opis" value={mealDescription} onChange={e => setMealDescription(e.target.value)}/>
                             <label >Meal description</label>
                         </div>
                         <div className="form-floating input-row">
-                            <input className="form-control" placeholder="Meal price" value={mealPrice} onChange={e => setMealPrice(e.target.value)}/>
+                            <input className="form-control" placeholder="Cena" value={mealPrice} onChange={e => setMealPrice(e.target.value)}/>
                             <label >Meal price</label>
                         </div>
                     </div>
-                    <button onClick={handleOnClick}>Add</button>
+                    <button placeholder="Add meal" onClick={handleOnClick}>Add</button>
                 </div>
             </form>
         </div>
