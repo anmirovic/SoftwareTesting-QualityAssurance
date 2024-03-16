@@ -57,6 +57,7 @@ public class AddRestaurantTests : PageTest
         await page.GetByPlaceholder("Cena").FillAsync(1500.ToString());
 
         await page.GetByPlaceholder("Add meal").ClickAsync();
+
         await page.ScreenshotAsync(new() { Path = "../../../Slike/AddRestaurantUspesno2.png" });
 
         await page.GetByPlaceholder("Ime jela").FillAsync("Pasta");
@@ -64,13 +65,15 @@ public class AddRestaurantTests : PageTest
         await page.GetByPlaceholder("Cena").FillAsync(600.ToString());
 
         await page.GetByPlaceholder("Add meal").ClickAsync();
-        await page.ScreenshotAsync(new() { Path = "../../../Slike/AddRestaurantUspesno2.png" });
-
 
         await page.GetByPlaceholder("Create Restaurant").ClickAsync();
-        await page.GotoAsync($"http://localhost:5173/account");
 
         await page.ScreenshotAsync(new() { Path = "../../../Slike/AddRestaurantUspesno3.png" });
+
+
+        await page.GotoAsync($"http://localhost:5173/account");
+
+        await page.ScreenshotAsync(new() { Path = "../../../Slike/AddRestaurantUspesno4.png" });
 
     }
 
@@ -126,6 +129,7 @@ public class AddRestaurantTests : PageTest
         await page.ScreenshotAsync(new() { Path = "../../../Slike/DodajRestoranAdmin2.png" });
 
         await page.GetByPlaceholder("SignUp").ClickAsync();
+
         await page.GotoAsync($"http://localhost:5173/login");
 
         await page.ScreenshotAsync(new() { Path = "../../../Slike/DodajRestoranAdmin3.png" });
@@ -134,6 +138,7 @@ public class AddRestaurantTests : PageTest
         await page.GetByPlaceholder("Password").FillAsync("janko");
 
         await page.GetByPlaceholder("SignIn").ClickAsync();
+
         await page.GotoAsync($"http://localhost:5173/");
 
         await page.ScreenshotAsync(new() { Path = "../../../Slike/DodajRestoranAdmin4.png" });
@@ -163,6 +168,7 @@ public class AddRestaurantTests : PageTest
         await page.ScreenshotAsync(new() { Path = "../../../Slike/DodajRestoranUser2.png" });
 
         await page.GetByPlaceholder("SignUp").ClickAsync();
+
         await page.GotoAsync($"http://localhost:5173/login");
 
         await page.GetByPlaceholder("name@example.com").FillAsync("petar@gmail.com");

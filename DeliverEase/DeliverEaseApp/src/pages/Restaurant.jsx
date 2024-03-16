@@ -30,7 +30,7 @@ const Restaurant = () => {
   },[]);
 
   return (
-    <div>
+    <div data-restaurant-id={restaurant ? restaurant.id : ''}>
         {restaurant ? (
         <div>
           <div><h2>{restaurant.name}</h2></div>

@@ -45,11 +45,11 @@ const Meal = (props) => {
             <div>{props.meal.description}</div>
             <div>${props.meal.price}</div>
             <div>
-                <button onClick={handleDecrease}>-</button>
+                <button onClick={handleDecrease} data-meal-name={props.meal.name}>-</button>
                     {quantity}
-                <button onClick={handleIncrease}>+</button>
+                <button onClick={handleIncrease} data-meal-name={props.meal.name}>+</button>
             </div>
-                <button onClick={() => orderMeal(props.meal)}>Order meal</button>
+            <button onClick={() => orderMeal(props.meal)} data-meal-id={props.meal.name}>Order meal</button>
         </div>
     );
 }
