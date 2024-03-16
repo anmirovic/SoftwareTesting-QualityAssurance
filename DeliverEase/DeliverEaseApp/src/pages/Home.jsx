@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Restaurants from '../components/Restaurants';
 import Cookies from 'js-cookie';
+import Navbar from '../components/Nav/Navbar';
 
 const Home = () => {
   const [allRestaurants, setAllRestaurants] = useState([]);

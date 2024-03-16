@@ -2,17 +2,19 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Register= () => {
-    const [name, setName] = useState([]);
-    const [surName, setSurName] = useState([]);
-    const [username, setUserName] = useState([]);
-    const [email, setEmail] = useState([]);
-    const [password, setPassword] = useState([]);
-    const [phone, setPhone] = useState([]);
+    const [name, setName] = useState('');
+    const [surName, setSurName] = useState('');
+    const [username, setUserName] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [phone, setPhone] = useState('');
     const [role, setRole] = useState("user");
 
     const navigate = useNavigate();
 
-    const submit =  () => {
+    const submit = async (e) => {
+        e.preventDefault();
+
         const formData = {
                 name: name,
                 surname: surName,
@@ -23,7 +25,7 @@ const Register= () => {
                 role: role
         };
         
-        const response = fetch('https://localhost:7050/api/User/Register',{
+        fetch('https://localhost:7050/api/User/Register',{
             method:'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -34,12 +36,13 @@ const Register= () => {
             if (response.ok) {
                 navigate('/login');
             }
-        })       
+        })   
+                 
     };
     
     return(
         <div>
-            
+            <form onSubmit={submit}>
                 <div className="form-floating input-row">
                     <input className="form-control" placeholder="Name" required onChange={(e) => setName(e.target.value)}/>
                     <label >Name</label>
@@ -68,8 +71,8 @@ const Register= () => {
                     <label ><input type="checkbox" placeholder="Admin" value={"admin"} onChange={(e) => setRole(e.target.value)} />Are you an admin?</label>   
                 </div>
                 <Link className="nav-link login-label" to={"/login"} >Already have an account?</Link>
-                <button className="btn btn-primary w-100 py-2 mb-4" placeholder="SignUp" type="submit" onClick={submit}>Sign up</button>
-            
+                <button className="btn btn-primary w-100 py-2 mb-4" placeholder="SignUp" type="submit" >Sign up</button>
+            </form>
         </div>
     );
 }
