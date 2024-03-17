@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, json } from 'react-router-dom';
 import Home from './pages/Home';
 import Navbar from './components/Nav/Navbar';
 import Register from './pages/Register';
@@ -21,6 +21,7 @@ function App() {
         headers: {
           'Content-Type': 'application/json'
         },
+        body: JSON.stringify(),
         credentials: 'include',
         mode: 'cors'
     });

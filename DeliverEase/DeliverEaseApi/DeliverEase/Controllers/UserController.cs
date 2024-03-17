@@ -120,7 +120,7 @@ namespace DeliverEase.Controllers
 
         [AllowAnonymous]
         [HttpPut("UpdateUser")]
-        public async Task<IActionResult> UpdateUser(string id, [FromForm] User userIn)
+        public async Task<IActionResult> UpdateUser(string id, User userIn)
         {
             try
             {

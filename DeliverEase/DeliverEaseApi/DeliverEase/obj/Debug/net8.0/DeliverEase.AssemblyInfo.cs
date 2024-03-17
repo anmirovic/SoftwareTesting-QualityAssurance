@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DeliverEase")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2ae0bd267c6e1b445f78a77ea5cbcece8968802")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a3a344ff4083258801e63b6ad9f5f84b54c95ad9")]
 [assembly: System.Reflection.AssemblyProductAttribute("DeliverEase")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DeliverEase")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
