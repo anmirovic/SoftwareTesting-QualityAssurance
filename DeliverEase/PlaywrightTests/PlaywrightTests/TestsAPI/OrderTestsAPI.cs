@@ -46,13 +46,13 @@ namespace PlaywrightTests.TestsAPI
         [Test]
         public async Task PreuzmiNarudzbinu_Uspesno()
         {
-            var noviKorisnik = new //obavezno promeni email
+            var noviKorisnik = new 
             {
 
                 name = "user12",
                 surname = "user12",
                 username = "user12",
-                email = "user122@gmail.com",
+                email = "user122@gmail.com", //pri ponovnom testiranju, promeniti email
                 password = "user12",
                 phoneNumber = "0625467",
                 role = "user"

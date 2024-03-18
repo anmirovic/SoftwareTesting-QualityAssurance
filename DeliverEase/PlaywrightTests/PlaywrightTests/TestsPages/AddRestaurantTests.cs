@@ -46,15 +46,22 @@ public class AddRestaurantTests : PageTest
     public async Task DodajRestoran_Uspesno()
     {
         await page.GotoAsync($"http://localhost:5173/addrestaurant");
+        Assert.That(page.Url, Is.EqualTo("http://localhost:5173/addrestaurant"));
 
         await page.ScreenshotAsync(new() { Path = "../../../Slike/AddRestaurantUspesno1.png" });
 
-        await page.GetByPlaceholder("Name").FillAsync("Night&Day");
+        await page.GetByPlaceholder("Name").FillAsync("Uspesni Restoran");
         await page.GetByPlaceholder("Address").FillAsync("Obrenoviceva");
 
         await page.GetByPlaceholder("Ime jela").FillAsync("Pizza");
         await page.GetByPlaceholder("Opis").FillAsync("Capricoza");
         await page.GetByPlaceholder("Cena").FillAsync(1500.ToString());
+
+        var formFilled1 = await page.EvaluateAsync<bool>(@"() => {
+                const inputs = Array.from(document.getElementsByTagName('input'));
+                return inputs.every(input => input.value !== '');
+        }");
+        Assert.That(formFilled1, Is.True);
 
         await page.GetByPlaceholder("Add meal").ClickAsync();
 
@@ -64,14 +71,26 @@ public class AddRestaurantTests : PageTest
         await page.GetByPlaceholder("Opis").FillAsync("Carbonara");
         await page.GetByPlaceholder("Cena").FillAsync(600.ToString());
 
-        await page.GetByPlaceholder("Add meal").ClickAsync();
+        var formFilled2 = await page.EvaluateAsync<bool>(@"() => {
+                const inputs = Array.from(document.getElementsByTagName('input'));
+                return inputs.every(input => input.value !== '');
+        }");
+        Assert.That(formFilled2, Is.True);
 
-        await page.GetByPlaceholder("Create Restaurant").ClickAsync();
+        await page.GetByPlaceholder("Add meal").ClickAsync();
 
         await page.ScreenshotAsync(new() { Path = "../../../Slike/AddRestaurantUspesno3.png" });
 
+        await page.GetByPlaceholder("Create Restaurant").ClickAsync();
 
-        await page.GotoAsync($"http://localhost:5173/account");
+        await page.GotoAsync($"http://localhost:5173/");
+        Assert.That(page.Url, Is.EqualTo("http://localhost:5173/"));
+
+        await page.EvaluateAsync(@"() => {
+            window.scrollTo(0, document.body.scrollHeight);
+        }");
+
+        await page.WaitForTimeoutAsync(2000);
 
         await page.ScreenshotAsync(new() { Path = "../../../Slike/AddRestaurantUspesno4.png" });
 
@@ -81,6 +100,7 @@ public class AddRestaurantTests : PageTest
     public async Task DodajRestoran_Neuspesno()
     {
         await page.GotoAsync($"http://localhost:5173/addrestaurant");
+        Assert.That(page.Url, Is.EqualTo("http://localhost:5173/addrestaurant"));
 
         await page.ScreenshotAsync(new() { Path = "../../../Slike/AddRestaurantNeuspesno1.png" });
 
@@ -115,36 +135,52 @@ public class AddRestaurantTests : PageTest
     public async Task DodajRestoran_Admin()
     {
         await page.GotoAsync($"http://localhost:5173/register");
+        Assert.That(page.Url, Is.EqualTo("http://localhost:5173/register"));
 
         await page.ScreenshotAsync(new() { Path = "../../../Slike/DodajRestoranAdmin1.png" });
 
-        await page.GetByPlaceholder("Name").FillAsync("Janko");
+        await page.GetByPlaceholder("Name").FillAsync("Jelena");
         await page.GetByPlaceholder("Prezime").FillAsync("Jankovic");
-        await page.GetByPlaceholder("KorisnickoIme").FillAsync("Janko");
-        await page.GetByPlaceholder("n@example.com").FillAsync("jankojanko@gmail.com");
-        await page.GetByPlaceholder("Lozinka").FillAsync("janko");
+        await page.GetByPlaceholder("KorisnickoIme").FillAsync("Jelena");
+        await page.GetByPlaceholder("n@example.com").FillAsync("jelenajanko@gmail.com");
+        await page.GetByPlaceholder("Lozinka").FillAsync("jelena");
         await page.GetByPlaceholder("Telefon").FillAsync("0652859632");
         await page.GetByPlaceholder("Admin").CheckAsync();
+
+        var formFilled = await page.EvaluateAsync<bool>(@"() => {
+                const inputs = Array.from(document.getElementsByTagName('input'));
+                return inputs.every(input => input.value !== '');
+        }");
+        Assert.That(formFilled, Is.True);
 
         await page.ScreenshotAsync(new() { Path = "../../../Slike/DodajRestoranAdmin2.png" });
 
         await page.GetByPlaceholder("SignUp").ClickAsync();
 
         await page.GotoAsync($"http://localhost:5173/login");
+        Assert.That(page.Url, Is.EqualTo("http://localhost:5173/login"));
 
         await page.ScreenshotAsync(new() { Path = "../../../Slike/DodajRestoranAdmin3.png" });
 
-        await page.GetByPlaceholder("name@example.com").FillAsync("jankojanko@gmail.com");
-        await page.GetByPlaceholder("Password").FillAsync("janko");
+        await page.GetByPlaceholder("name@example.com").FillAsync("jelenajanko@gmail.com");
+        await page.GetByPlaceholder("Password").FillAsync("jelena");
+
+        var formFilled2 = await page.EvaluateAsync<bool>(@"() => {
+                const inputs = Array.from(document.getElementsByTagName('input'));
+                return inputs.every(input => input.value !== '');
+        }");
+        Assert.That(formFilled2, Is.True);
 
         await page.GetByPlaceholder("SignIn").ClickAsync();
 
         await page.GotoAsync($"http://localhost:5173/");
+        Assert.That(page.Url, Is.EqualTo("http://localhost:5173/"));
 
         await page.ScreenshotAsync(new() { Path = "../../../Slike/DodajRestoranAdmin4.png" });
 
         await page.GetByPlaceholder("Account").ClickAsync();
         await page.GotoAsync($"http://localhost:5173/account");  //ispod Orders i Reviews stoji opcija Add Restaurant
+        Assert.That(page.Url, Is.EqualTo("http://localhost:5173/account"));
 
         var addRestaurantLink = await page.QuerySelectorAsync("a[placeholder='AddRestaurant']");
         Assert.NotNull(addRestaurantLink);
@@ -155,34 +191,50 @@ public class AddRestaurantTests : PageTest
     public async Task DodajRestoran_User()
     {
         await page.GotoAsync($"http://localhost:5173/register");
+        Assert.That(page.Url, Is.EqualTo("http://localhost:5173/register"));
 
         await page.ScreenshotAsync(new() { Path = "../../../Slike/DodajRestoranUser1.png" });
 
-        await page.GetByPlaceholder("Name").FillAsync("Petar");
-        await page.GetByPlaceholder("Prezime").FillAsync("Petrovic");
-        await page.GetByPlaceholder("KorisnickoIme").FillAsync("Petar");
-        await page.GetByPlaceholder("n@example.com").FillAsync("petar@gmail.com");
-        await page.GetByPlaceholder("Lozinka").FillAsync("petar");
+        await page.GetByPlaceholder("Name").FillAsync("Petko");
+        await page.GetByPlaceholder("Prezime").FillAsync("Petkovic");
+        await page.GetByPlaceholder("KorisnickoIme").FillAsync("Petko");
+        await page.GetByPlaceholder("n@example.com").FillAsync("petko55@gmail.com");
+        await page.GetByPlaceholder("Lozinka").FillAsync("petko");
         await page.GetByPlaceholder("Telefon").FillAsync("0652859632");
+
+        var formFilled = await page.EvaluateAsync<bool>(@"() => {
+                const inputs = Array.from(document.getElementsByTagName('input'));
+                return inputs.every(input => input.value !== '');
+        }");
+        Assert.That(formFilled, Is.True);
 
         await page.ScreenshotAsync(new() { Path = "../../../Slike/DodajRestoranUser2.png" });
 
         await page.GetByPlaceholder("SignUp").ClickAsync();
 
         await page.GotoAsync($"http://localhost:5173/login");
+        Assert.That(page.Url, Is.EqualTo("http://localhost:5173/login"));
 
-        await page.GetByPlaceholder("name@example.com").FillAsync("petar@gmail.com");
-        await page.GetByPlaceholder("Password").FillAsync("petar");
+        await page.GetByPlaceholder("name@example.com").FillAsync("petko55@gmail.com");
+        await page.GetByPlaceholder("Password").FillAsync("petko");
+
+        var formFilled2 = await page.EvaluateAsync<bool>(@"() => {
+                const inputs = Array.from(document.getElementsByTagName('input'));
+                return inputs.every(input => input.value !== '');
+        }");
+        Assert.That(formFilled2, Is.True);
 
         await page.ScreenshotAsync(new() { Path = "../../../Slike/DodajRestoranUser3.png" });
 
         await page.GetByPlaceholder("SignIn").ClickAsync();
         await page.GotoAsync($"http://localhost:5173/");
+        Assert.That(page.Url, Is.EqualTo("http://localhost:5173/"));
 
         await page.ScreenshotAsync(new() { Path = "../../../Slike/DodajRestoranUser4.png" });
 
         await page.GetByPlaceholder("Account").ClickAsync();
         await page.GotoAsync($"http://localhost:5173/account");  //ispod Orders i Reviews nema opcije AddRestaurant
+        Assert.That(page.Url, Is.EqualTo("http://localhost:5173/account"));
 
         var addRestaurantLink = await page.QuerySelectorAsync("a[placeholder='AddRestaurant']");
         Assert.Null(addRestaurantLink);

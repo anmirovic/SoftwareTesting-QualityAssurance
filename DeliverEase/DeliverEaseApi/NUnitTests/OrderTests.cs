@@ -65,30 +65,24 @@ namespace NUnitTests
                 Name = "Mirka",
                 Surname = "Mirkovic",
                 Username = "Mirka",
-                Email = "mirka@gmail.com",
+                Email = "mirka@gmail.com", //pri ponovnom pokretanju testa, promeniti email 
                 Password = "mirka",
                 PhoneNumber = "0647239567",
                 Role = "user"
             };
 
-            // Kreiranje restorana
             var restaurantActionResult = await _restaurantController.CreateRestaurant(newRestaurant);
             var restaurantObjectResult = restaurantActionResult as ObjectResult;
             var restaurant = restaurantObjectResult.Value as Restaurant;
 
-            // Registracija korisnika
             var userActionResult = await _userController.Register(newUser);
             var userObjectResult = userActionResult as ObjectResult;
             var user = userObjectResult.Value as User;
 
+            var selectedMeals = restaurant.Meals.Take(2).ToList();
 
-            // Izaberite nekoliko jela za narudžbinu
-            var selectedMeals = restaurant.Meals.Take(2).ToList(); // Možete izabrati koliko god jela želite.
-
-            // Izdvojte ID-jeve izabranih jela
             var mealIds = selectedMeals.Select(meal => meal.Id).ToList();
 
-            // Act: Create an order
             var createOrderResult = await _orderController.CreateOrder(restaurant.Id, user.Id, mealIds);
             
             Assert.IsInstanceOf<OkObjectResult>(createOrderResult);
@@ -120,26 +114,22 @@ namespace NUnitTests
                 Name = "Milica",
                 Surname = "Andric",
                 Username = "Milica",
-                Email = "milicaandric@gmail.com",
+                Email = "milicaandric@gmail.com", //pri ponovnom pokretanju testa, promeniti email
                 Password = "milica",
                 PhoneNumber = "0642839577",
                 Role = "user"
             };
 
-            // Kreiranje restorana
             var restaurantActionResult = await _restaurantController.CreateRestaurant(newRestaurant);
             var restaurantObjectResult = restaurantActionResult as ObjectResult;
             var restaurant = restaurantObjectResult.Value as Restaurant;
 
-            // Registracija korisnika
             var userActionResult = await _userController.Register(newUser);
             var userObjectResult = userActionResult as ObjectResult;
             var user = userObjectResult.Value as User;
 
-
             var mealIds = new List<string>();
 
-            // Act: Create an order
             var result = await _orderController.CreateOrder(restaurant.Id, user.Id, mealIds);
 
             Assert.IsInstanceOf<BadRequestObjectResult>(result);
@@ -164,30 +154,24 @@ namespace NUnitTests
                 Name = "Mirka",
                 Surname = "Mirkovic",
                 Username = "Mirka",
-                Email = "mirkamirk@gmail.com",
+                Email = "mirkamirk@gmail.com", //pri ponovnom pokretanju testa, promeniti email
                 Password = "mirka",
                 PhoneNumber = "0647239567",
                 Role = "user"
             };
 
-            // Kreiranje restorana
             var restaurantActionResult = await _restaurantController.CreateRestaurant(newRestaurant);
             var restaurantObjectResult = restaurantActionResult as ObjectResult;
             var restaurant = restaurantObjectResult.Value as Restaurant;
 
-            // Registracija korisnika
             var userActionResult = await _userController.Register(newUser);
             var userObjectResult = userActionResult as ObjectResult;
             var user = userObjectResult.Value as User;
 
+            var selectedMeals = restaurant.Meals.Take(1).ToList();
 
-            // Izaberite nekoliko jela za narudžbinu
-            var selectedMeals = restaurant.Meals.Take(1).ToList(); // Možete izabrati koliko god jela želite.
-
-            // Izdvojte ID-jeve izabranih jela
             var mealIds = selectedMeals.Select(meal => meal.Id).ToList();
 
-            // Act: Create an order
             var orderActionResult = await _orderController.CreateOrder(restaurant.Id, user.Id, mealIds);
             var orderObjectResult = orderActionResult as ObjectResult;
             var order = orderObjectResult.Value as Order;
@@ -233,30 +217,24 @@ namespace NUnitTests
                 Name = "Mirko",
                 Surname = "Bojanic",
                 Username = "Mirko",
-                Email = "mirkomirko@gmail.com",
+                Email = "mirkomirko@gmail.com", //pri ponovnom pokretanju testa, promeniti email
                 Password = "mirko",
                 PhoneNumber = "0667239667",
                 Role = "user"
             };
 
-            // Kreiranje restorana
             var restaurantActionResult = await _restaurantController.CreateRestaurant(newRestaurant);
             var restaurantObjectResult = restaurantActionResult as ObjectResult;
             var restaurant = restaurantObjectResult.Value as Restaurant;
 
-            // Registracija korisnika
             var userActionResult = await _userController.Register(newUser);
             var userObjectResult = userActionResult as ObjectResult;
             var user = userObjectResult.Value as User;
 
+            var selectedMeals = restaurant.Meals.Take(1).ToList();
 
-            // Izaberite nekoliko jela za narudžbinu
-            var selectedMeals = restaurant.Meals.Take(1).ToList(); // Možete izabrati koliko god jela želite.
-
-            // Izdvojte ID-jeve izabranih jela
             var mealIds = selectedMeals.Select(meal => meal.Id).ToList();
 
-            // Act: Create an order
             var orderActionResult = await _orderController.CreateOrder(restaurant.Id, user.Id, mealIds);
             var orderObjectResult = orderActionResult as ObjectResult;
             var order = orderObjectResult.Value as Order;
@@ -287,48 +265,34 @@ namespace NUnitTests
                 Name = "Mihajlo",
                 Surname = "Mihajlovic",
                 Username = "Mihajlo",
-                Email = "mihajlo@gmail.com",
+                Email = "mihajlo@gmail.com", //pri ponovnom pokretanju testa, promeniti email
                 Password = "mihajlo",
                 PhoneNumber = "0620230567",
                 Role = "user"
             };
 
-            // Kreiranje restorana
             var restaurantActionResult = await _restaurantController.CreateRestaurant(newRestaurant);
             var restaurantObjectResult = restaurantActionResult as ObjectResult;
             var restaurant = restaurantObjectResult.Value as Restaurant;
 
-            // Registracija korisnika
             var userActionResult = await _userController.Register(newUser);
             var userObjectResult = userActionResult as ObjectResult;
             var user = userObjectResult.Value as User;
 
+            var selectedMeals = restaurant.Meals.Take(2).ToList();
 
-            // Izaberite nekoliko jela za narudžbinu
-            var selectedMeals = restaurant.Meals.Take(2).ToList(); // Možete izabrati koliko god jela želite.
-
-            // Izdvojte ID-jeve izabranih jela
             var mealIds = selectedMeals.Select(meal => meal.Id).ToList();
 
-            // Act: Create an order
             var orderActionResult = await _orderController.CreateOrder(restaurant.Id, user.Id, mealIds);
             var orderObjectResult = orderActionResult as ObjectResult;
             var order = orderObjectResult.Value as Order;
 
-
             var actionResult = await _orderController.GetOrderById(order.Id);
 
-            // Proveravamo rezultat
             Assert.IsInstanceOf<OkObjectResult>(actionResult.Result);
             var result = (OkObjectResult)actionResult.Result;
-
-            // Proveravamo da li je rezultat pravilan
             Assert.IsNotNull(result);
-
-            // Izvlačimo order iz rezultata
             var getOrder = result.Value as Order;
-
-            // Proveravamo da li je order pronađen
             Assert.IsNotNull(getOrder);
             Assert.AreEqual(order.Id, getOrder.Id);
         }
@@ -344,9 +308,7 @@ namespace NUnitTests
             Assert.IsInstanceOf<BadRequestObjectResult>(rezultat.Result);
             var result = (BadRequestObjectResult)rezultat.Result;
 
-            // Proveravamo da li je rezultat pravilan
             Assert.IsNotNull(result);
-
 
         }
 
@@ -371,38 +333,30 @@ namespace NUnitTests
                 Name = "Julija",
                 Surname = "Brankic",
                 Username = "Julija",
-                Email = "julija@gmail.com",
+                Email = "julija@gmail.com", //pri ponovnom pokretanju testa, promeniti email
                 Password = "julija",
                 PhoneNumber = "0663339667",
                 Role = "user"
             };
 
-            // Kreiranje restorana
             var restaurantActionResult = await _restaurantController.CreateRestaurant(newRestaurant);
             var restaurantObjectResult = restaurantActionResult as ObjectResult;
             var restaurant = restaurantObjectResult.Value as Restaurant;
 
-            // Registracija korisnika
             var userActionResult = await _userController.Register(newUser);
             var userObjectResult = userActionResult as ObjectResult;
             var user = userObjectResult.Value as User;
 
+            var selectedMeals = restaurant.Meals.Take(1).ToList();
 
-            // Izaberite nekoliko jela za narudžbinu
-            var selectedMeals = restaurant.Meals.Take(1).ToList(); // Možete izabrati koliko god jela želite.
-
-            // Izdvojte ID-jeve izabranih jela
             var mealIds = selectedMeals.Select(meal => meal.Id).ToList();
 
-            // Act: Create an order
             var orderActionResult = await _orderController.CreateOrder(restaurant.Id, user.Id, mealIds);
             var orderObjectResult = orderActionResult as ObjectResult;
             var order = orderObjectResult.Value as Order;
 
-            // Izaberite nekoliko jela za narudžbinu
-            var updatedSelectedMeals = restaurant.Meals.Take(2).ToList(); // Možete izabrati koliko god jela želite.
+            var updatedSelectedMeals = restaurant.Meals.Take(2).ToList();
 
-            // Izdvojte ID-jeve izabranih jela
             var updatedMealIds = updatedSelectedMeals.Select(meal => meal.Id).ToList();
 
             var result = await _orderController.UpdateOrder(order.Id, updatedMealIds);
@@ -436,41 +390,33 @@ namespace NUnitTests
                 Name = "Dragana",
                 Surname = "Brankic",
                 Username = "Dragana",
-                Email = "dragana@gmail.com",
+                Email = "dragana@gmail.com", //pri ponovnom pokretanju testa, promeniti email
                 Password = "dragana",
                 PhoneNumber = "0663323667",
                 Role = "user"
             };
 
-            // Kreiranje restorana
             var restaurantActionResult = await _restaurantController.CreateRestaurant(newRestaurant);
             var restaurantObjectResult = restaurantActionResult as ObjectResult;
             var restaurant = restaurantObjectResult.Value as Restaurant;
 
-            // Registracija korisnika
             var userActionResult = await _userController.Register(newUser);
             var userObjectResult = userActionResult as ObjectResult;
             var user = userObjectResult.Value as User;
 
+            var selectedMeals = restaurant.Meals.Take(1).ToList();
 
-            // Izaberite nekoliko jela za narudžbinu
-            var selectedMeals = restaurant.Meals.Take(1).ToList(); // Možete izabrati koliko god jela želite.
-
-            // Izdvojte ID-jeve izabranih jela
             var mealIds = selectedMeals.Select(meal => meal.Id).ToList();
 
-            // Act: Create an order
             var orderActionResult = await _orderController.CreateOrder(restaurant.Id, user.Id, mealIds);
             var orderObjectResult = orderActionResult as ObjectResult;
             var order = orderObjectResult.Value as Order;
 
-            var updatedSelectedMeals = restaurant.Meals.Take(2).ToList(); // Možete izabrati koliko god jela želite.
+            var updatedSelectedMeals = restaurant.Meals.Take(2).ToList();
 
-            // Izdvojte ID-jeve izabranih jela
             var updatedMealIds = updatedSelectedMeals.Select(meal => meal.Id).ToList();
 
             var result = await _orderController.UpdateOrder(nepostojeciId, updatedMealIds);
-
 
             Assert.IsInstanceOf<BadRequestObjectResult>(result);
             var badRequestResult = result as BadRequestObjectResult;
@@ -501,37 +447,27 @@ namespace NUnitTests
                 Name = "Brankica",
                 Surname = "Nikolic",
                 Username = "Brankica",
-                Email = "brankica@gmail.com",
+                Email = "brankica@gmail.com", //pri ponovnom pokretanju testa, promeniti email
                 Password = "brankica",
                 PhoneNumber = "0663393767",
                 Role = "user"
             };
 
-            // Kreiranje restorana
             var restaurantActionResult = await _restaurantController.CreateRestaurant(newRestaurant);
             var restaurantObjectResult = restaurantActionResult as ObjectResult;
             var restaurant = restaurantObjectResult.Value as Restaurant;
 
-            // Registracija korisnika
             var userActionResult = await _userController.Register(newUser);
             var userObjectResult = userActionResult as ObjectResult;
             var user = userObjectResult.Value as User;
 
 
-            Random random = new Random();
-
-            // Broj narudžbina koje želite kreirati
-            int numberOfOrders = 2;
-
-            for (int i = 0; i < numberOfOrders; i++)
+            for (int i = 0; i < 3; i++)
             {
-                // Nasumično izaberite nekoliko jela za narudžbinu
-                var selectedMeals = restaurant.Meals.OrderBy(x => random.Next()).Take(random.Next(1, restaurant.Meals.Count)).ToList();
+                var selectedMeal = restaurant.Meals[i];
 
-                // Izdvojte ID-jeve izabranih jela
-                var mealIds = selectedMeals.Select(meal => meal.Id).ToList();
+                var mealIds = new List<string> { selectedMeal.Id.ToString() };
 
-                // Kreirajte narudžbinu
                 var orderActionResult = await _orderController.CreateOrder(restaurant.Id, user.Id, mealIds);
                 var orderObjectResult = orderActionResult as ObjectResult;
                 var order = orderObjectResult.Value as Order;
@@ -564,13 +500,12 @@ namespace NUnitTests
         [Test]
         public async Task PreuzmiOrdersForUser_UspesnoPreuzimanje()
         {
-            // Kreiranje korisnika
             User newUser = new User
             {
                 Name = "Luka",
                 Surname = "Lukic",
                 Username = "luka",
-                Email = "luka@example.com",
+                Email = "luka@example.com", //pri ponovnom pokretanju testa, promeniti email
                 Password = "luka",
                 PhoneNumber = "0652334567",
                 Role = "user"
@@ -612,34 +547,31 @@ namespace NUnitTests
             var restaurant2ObjectResult = restaurant2ActionResult as ObjectResult;
             var restaurant2Result = restaurant2ObjectResult.Value as Restaurant;
 
-            // Kreiranje narudžbine 1 za korisnika
+            // Kreiranje narudžbine 1
             var selectedMeals1 = restaurant1Result.Meals.Take(1).ToList();
             var mealIds1 = selectedMeals1.Select(meal => meal.Id).ToList();
             var orderActionResult1 = await _orderController.CreateOrder(restaurant1Result.Id, user.Id, mealIds1);
             var orderObjectResult1 = orderActionResult1 as ObjectResult;
             var order1 = orderObjectResult1.Value as Order;
 
-            // Kreiranje narudžbine 2 za korisnika
+            // Kreiranje narudžbine 2
             var selectedMeals2 = restaurant2Result.Meals.Take(1).ToList();
             var mealIds2 = selectedMeals2.Select(meal => meal.Id).ToList();
             var orderActionResult2 = await _orderController.CreateOrder(restaurant2Result.Id, user.Id, mealIds2);
             var orderObjectResult2 = orderActionResult2 as ObjectResult;
             var order2 = orderObjectResult2.Value as Order;
 
-            // Poziv funkcije GetOrdersForUser
             var result = await _orderController.GetOrdersForUser(user.Id);
 
-            // Provera rezultata
             Assert.IsInstanceOf<OkObjectResult>(result.Result);
             var okResult = result.Result as OkObjectResult;
             Assert.IsNotNull(okResult);
 
-            // Provera porudžbina
             var orders = okResult.Value as List<Order>;
             Assert.IsNotNull(orders);
-            Assert.AreEqual(2, orders.Count); // Očekujemo da korisnik ima 2 porudžbine
-            Assert.IsTrue(orders.Any(order => order.Id == order1.Id)); // Provera da li je prva porudžbina prisutna
-            Assert.IsTrue(orders.Any(order => order.Id == order2.Id)); // Provera da li je druga porudžbina prisutna
+            Assert.AreEqual(2, orders.Count);
+            Assert.IsTrue(orders.Any(order => order.Id == order1.Id));
+            Assert.IsTrue(orders.Any(order => order.Id == order2.Id));
         }
 
     }

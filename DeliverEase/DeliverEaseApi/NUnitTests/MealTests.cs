@@ -238,7 +238,7 @@ namespace NUnitTests
 
 
         [Test]
-        public async Task PreuzmiMealsNekogRestorana_UspesnoPreuzimanje()
+        public async Task PreuzmiJelaNekogRestorana_UspesnoPreuzimanje()
         {
 
 
@@ -268,7 +268,7 @@ namespace NUnitTests
         }
 
         [Test]
-        public async Task PreuzmiMealsNekogRestorana_PraznaLista()
+        public async Task PreuzmiJelaNekogRestorana_PraznaLista()
         {
 
 
@@ -316,14 +316,9 @@ namespace NUnitTests
            
             Assert.IsInstanceOf<OkObjectResult>(actionResult.Result);
             var result = (OkObjectResult)actionResult.Result;
-
-            
-            Assert.IsNotNull(result);
-
-            
+           
+            Assert.IsNotNull(result); 
             var getMeal = result.Value as Meal;
-
-            
             Assert.IsNotNull(getMeal);
             Assert.AreEqual(obrok.Id, getMeal.Id);
         }
@@ -350,7 +345,6 @@ namespace NUnitTests
             
             Assert.IsInstanceOf<BadRequestObjectResult>(rezultat.Result);
             var result = (BadRequestObjectResult)rezultat.Result;
-
 
             Assert.IsNotNull(result);
             Assert.AreEqual($"Meal with ID {nepostojeciMealId} not found.", result.Value);
@@ -379,7 +373,6 @@ namespace NUnitTests
 
             Assert.IsInstanceOf<BadRequestObjectResult>(rezultat.Result);
             var result = (BadRequestObjectResult)rezultat.Result;
-
 
             Assert.IsNotNull(result);
             Assert.AreEqual($"Restaurant with ID {nepostojeciRestaurantId} not found.", result.Value);

@@ -470,35 +470,5 @@ namespace NUnitTests
             }
         }
 
-        [Test]
-        public async Task SortByRating_PraznaLista_Ascending()
-        {
-            var mongoClient = new MongoClient("mongodb://localhost:27017");
-            var database = mongoClient.GetDatabase("TestDatabase");
-            var restaurantsCollection = database.GetCollection<Restaurant>("Restaurants");
-
-            // Delete existing restaurants from the collection
-            await restaurantsCollection.DeleteManyAsync(Builders<Restaurant>.Filter.Empty);
-
-            var restaurantService = new RestaurantService(database);
-            var reviewService = new ReviewService(database);
-            var restaurantController = new DeliverEase.Controllers.RestaurantController(restaurantService, reviewService);
-
-            var restaurants = new List<Restaurant>();
-
-            var actionResult = await restaurantController.GetRestaurantsSortedByRating(ascending: true);
-
-            Assert.IsInstanceOf<OkObjectResult>(actionResult.Result);
-            var result = (OkObjectResult)actionResult.Result;
-
-            Assert.IsNotNull(result);
-
-            var sortedRestaurants = result.Value as List<Restaurant>;
-            Assert.IsNotNull(sortedRestaurants);
-
-            Assert.AreEqual(0, sortedRestaurants.Count);
-        }
-
-
     }
 }

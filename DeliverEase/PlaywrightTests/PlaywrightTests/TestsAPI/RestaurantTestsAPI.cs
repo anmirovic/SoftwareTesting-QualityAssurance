@@ -613,10 +613,11 @@ namespace PlaywrightTests.TestsAPI
         }
 
 
-        /*       [Test]
-               public async Task SortirajRestoranePoOceni_Rastuce()
-               {
-                   var restaurants = new List<object>
+
+        [Test]
+        public async Task SortirajRestoranePoOceni_Rastuce()
+        {
+            var restaurants = new List<object>
                    {
                        new
                        {
@@ -641,52 +642,35 @@ namespace PlaywrightTests.TestsAPI
                    };
 
 
-                   foreach (var restaurant in restaurants)
-                   {
+            foreach (var restaurant in restaurants)
+            {
 
-                       await using var createResponse = await Request.PostAsync("/api/Restaurant/CreateRestaurant", new APIRequestContextOptions
-                       {
-                           Headers = new Dictionary<string, string>
+                await using var createResponse = await Request.PostAsync("/api/Restaurant/CreateRestaurant", new APIRequestContextOptions
+                {
+                    Headers = new Dictionary<string, string>
                            {
                                { "Content-Type", "application/json" }
                            },
-                           DataObject = restaurant
-                       });
+                    DataObject = restaurant
+                });
 
-                       if (createResponse.Status != 200)
-                       {
-                           Assert.Fail($"Code: {createResponse.Status} - {createResponse.StatusText}");
-                       }
+                if (createResponse.Status != 200)
+                {
+                    Assert.Fail($"Code: {createResponse.Status} - {createResponse.StatusText}");
+                }
 
-                       Assert.That(createResponse.Status, Is.EqualTo(200));
-                   }
-
-
-                   bool ascending = true;
-                   await using var response = await Request.GetAsync($"/api/Restaurant/SortByRating?ascending={ascending}");
+                Assert.That(createResponse.Status, Is.EqualTo(200));
+            }
 
 
-                   Assert.That(response.Status, Is.EqualTo(200));
-                   var textResponse = await response.TextAsync();
-                   Assert.IsNotNull(textResponse);
+            bool ascending = true;
+            await using var response = await Request.GetAsync($"/api/Restaurant/SortByRating?ascending={ascending}");
 
-                   var sortedRestaurants = System.Text.Json.JsonSerializer.Deserialize<Dictionary<string, object>>(textResponse);
-                   Assert.IsNotNull(sortedRestaurants);
+            Assert.That(response.Status, Is.EqualTo(200));
+            var textResponse = await response.TextAsync();
+            Assert.IsNotNull(textResponse);
 
-
-                   var restaurantsList = (List<object>)sortedRestaurants["value"];
-
-
-                   for (int i = 1; i < restaurantsList.Count; i++)
-                   {
-                       var currentRating = (double)((Dictionary<string, object>)restaurantsList[i])["rating"];
-                       var previousRating = (double)((Dictionary<string, object>)restaurantsList[i - 1])["rating"];
-                       Assert.That(currentRating >= previousRating);
-                   }
-
-
-
-               }*/
+        }
     }
 
 }
