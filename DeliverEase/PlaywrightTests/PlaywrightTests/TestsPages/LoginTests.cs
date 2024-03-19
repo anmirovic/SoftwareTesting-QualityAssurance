@@ -62,17 +62,16 @@ namespace PlaywrightTests
                 Headers = headers2,
                 DataObject = new
                 {
-                    name = "admin2",
-                    surname = "admin2",
-                    username = "admin2",
-                    email = "admin2@gmail.com",
-                    password = "admin2",
+                    name = "user2",
+                    surname = "user2",
+                    username = "user2",
+                    email = "user679@gmail.com",
+                    password = "user679",
                     phoneNumber = "0625467",
-                    role = "admin"
+                    role = "user"
                 }
             });
 
-            await page.GotoAsync("http://localhost:5173/login");
 
         }
 
@@ -80,15 +79,15 @@ namespace PlaywrightTests
         [Order(1)]
         public async Task LogIn_User_Uspesno()
         {
-            //await page.GotoAsync($"http://localhost:5173/login");
-            //Assert.That(page.Url, Is.EqualTo("http://localhost:5173/login"));
+            await page.GotoAsync($"http://localhost:5173/login");
+            Assert.That(page.Url, Is.EqualTo("http://localhost:5173/login"));
 
-            //await page.ScreenshotAsync(new() { Path = "../../../Slike/RegisterUser1.png" });
+            await page.ScreenshotAsync(new() { Path = "../../../Slike/LoginUser1.png" });
 
-            await page.GetByPlaceholder("name@example.com").FillAsync("admin2@gmail.com");
-            await page.GetByPlaceholder("Password").FillAsync("admin2");
+            await page.GetByPlaceholder("name@example.com").FillAsync("user679@gmail.com");
+            await page.GetByPlaceholder("Password").FillAsync("user679");
 
-           // await page.ScreenshotAsync(new() { Path = "../../../Slike/RegisterUser2.png" });
+            await page.ScreenshotAsync(new() { Path = "../../../Slike/LoginUser2.png" });
 
             var formFilled = await page.EvaluateAsync<bool>(@"() => {
                 const inputs = Array.from(document.getElementsByTagName('input'));
@@ -98,92 +97,82 @@ namespace PlaywrightTests
 
             await page.GetByPlaceholder("SignIn").ClickAsync();
 
-            //await page.GotoAsync($"http://localhost:5173/");
+            await page.GotoAsync($"http://localhost:5173/");
+            Assert.That(page.Url, Is.EqualTo("http://localhost:5173/"));
 
-            //Assert.That(page.Url, Is.EqualTo("http://localhost:5173/"));
-            //await Expect(page.InnerTextAsync("Welcome")).ToBeVisibleAsync();
-            //await page.ScreenshotAsync(new() { Path = "../../../Slike/RegisterUser3.png" });
+            var account = await page.QuerySelectorAsync("a[placeholder='Account']");
+            Assert.NotNull(account);
+
+            await page.ScreenshotAsync(new() { Path = "../../../Slike/LoginUser3.png" });
 
         }
 
-        //[Test]
-        //public async Task LogIn_User_Neuspesno()
-        //{
-        //    await page.GotoAsync($"http://localhost:5173/login");
-        //    Assert.That(page.Url, Is.EqualTo("http://localhost:5173/login"));
+        [Test]
+        public async Task LogIn_User_Neuspesno()
+        {
+            await page.GotoAsync($"http://localhost:5173/login");
+            Assert.That(page.Url, Is.EqualTo("http://localhost:5173/login"));
 
-        //    await page.ScreenshotAsync(new() { Path = "../../../Slike/RegisterUser1.png" });
+            await page.ScreenshotAsync(new() { Path = "../../../Slike/LoginUserNeuspesno1.png" });
 
-        //    await page.GetByPlaceholder("name@example.com").FillAsync("user@gmail.com");
+            await page.GetByPlaceholder("name@example.com").FillAsync("user1234@gmail.com");
 
-        //    await page.ScreenshotAsync(new() { Path = "../../../Slike/RegisterUser2.png" });
+            await page.ScreenshotAsync(new() { Path = "../../../Slike/LoginUserNeuspesno2.png" });
 
-        //    var formFilled = await page.EvaluateAsync<bool>(@"() => {
-        //            const inputs = Array.from(document.getElementsByTagName('input'));
-        //            return inputs.every(input => input.value !== '');
-        //    }");
-        //    Assert.That(formFilled, Is.False);
+            var formFilled = await page.EvaluateAsync<bool>(@"() => {
+                    const inputs = Array.from(document.getElementsByTagName('input'));
+                    return inputs.every(input => input.value !== '');
+            }");
+            Assert.That(formFilled, Is.False);
 
-        //    await page.GetByPlaceholder("SignIn").ClickAsync();
+            await page.GetByPlaceholder("SignIn").ClickAsync();
 
-        //    await page.ScreenshotAsync(new() { Path = "../../../Slike/RegisterUser3.png" });
+            await page.ScreenshotAsync(new() { Path = "../../../Slike/LoginUserNeuspesno3.png" });
 
-        //}
+        }
 
-        //[Test]
-        //public async Task LogIn_Admin_Uspesno()
-        //{
-        //    await page.GotoAsync($"http://localhost:5173/login");
-        //    Assert.That(page.Url, Is.EqualTo("http://localhost:5173/login"));
+        [Test]
+        [Order(1)]
+        public async Task Logout_Uspesno()
+        {
+            await page.GotoAsync($"http://localhost:5173/login");
+            Assert.That(page.Url, Is.EqualTo("http://localhost:5173/login"));
 
-        //    await page.ScreenshotAsync(new() { Path = "../../../Slike/RegisterUser1.png" });
+            await page.ScreenshotAsync(new() { Path = "../../../Slike/LogoutUser1.png" });
 
-        //    await page.GetByPlaceholder("name@example.com").FillAsync("admin@gmail.com");
-        //    await page.GetByPlaceholder("Password").FillAsync("admin");
+            await page.GetByPlaceholder("name@example.com").FillAsync("user679@gmail.com");
+            await page.GetByPlaceholder("Password").FillAsync("user679");
 
-        //    await page.ScreenshotAsync(new() { Path = "../../../Slike/RegisterUser2.png" });
+            await page.ScreenshotAsync(new() { Path = "../../../Slike/LogoutUser2.png" });
 
-        //    var formFilled = await page.EvaluateAsync<bool>(@"() => {
-        //            const inputs = Array.from(document.getElementsByTagName('input'));
-        //            return inputs.every(input => input.value !== '');
-        //    }");
-        //    Assert.That(formFilled, Is.True);
+            var formFilled = await page.EvaluateAsync<bool>(@"() => {
+                const inputs = Array.from(document.getElementsByTagName('input'));
+                return inputs.every(input => input.value !== '');
+                }");
+            Assert.That(formFilled, Is.True);
 
-        //    await page.GetByPlaceholder("SignIn").ClickAsync();
-        //    await page.GotoAsync($"http://localhost:5173/");
+            await page.GetByPlaceholder("SignIn").ClickAsync();
 
-        //    Assert.That(page.Url, Is.EqualTo("http://localhost:5173/"));
+            await page.GotoAsync($"http://localhost:5173/");
+            Assert.That(page.Url, Is.EqualTo("http://localhost:5173/"));
 
-        //    await page.GetByPlaceholder("Account").AllInnerTextsAsync();
+            await page.GetByPlaceholder("Account").ClickAsync();
+            await page.GotoAsync($"http://localhost:5173/account");
+            Assert.That(page.Url, Is.EqualTo("http://localhost:5173/account"));
 
-        //    await page.ScreenshotAsync(new() { Path = "../../../Slike/RegisterUser3.png" });
+            await page.ScreenshotAsync(new() { Path = "../../../Slike/LogoutUser3.png" });
 
-        //}
+            await page.GetByPlaceholder("Logout").ClickAsync();
 
-        //[Test]
-        //public async Task LogIn_Admin_Neuspesno()
-        //{
-        //    await page.GotoAsync($"http://localhost:5173/login");
-        //    Assert.That(page.Url, Is.EqualTo("http://localhost:5173/login"));
+            await page.GotoAsync($"http://localhost:5173/");
+            Assert.That(page.Url, Is.EqualTo("http://localhost:5173/"));
 
-        //    await page.ScreenshotAsync(new() { Path = "../../../Slike/RegisterUser1.png" });
+            var accountField = await page.QuerySelectorAsync("[placeholder='Account']");
+            Assert.That(accountField, Is.Null);
 
-        //    await page.GetByPlaceholder("name@example.com").FillAsync("admin@gmail.com");
 
-        //    await page.ScreenshotAsync(new() { Path = "../../../Slike/RegisterUser2.png" });
 
-        //    var formFilled = await page.EvaluateAsync<bool>(@"() => {
-        //            const inputs = Array.from(document.getElementsByTagName('input'));
-        //            return inputs.every(input => input.value !== '');
-        //    }");
-        //    Assert.That(formFilled, Is.False);
-
-        //    await page.GetByPlaceholder("SignIn").ClickAsync();
-
-        //    await page.ScreenshotAsync(new() { Path = "../../../Slike/RegisterUser3.png" });
-
-        //}
-
+        }
 
         [TearDown]
         public async Task Teardown()

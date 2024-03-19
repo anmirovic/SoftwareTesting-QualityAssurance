@@ -151,7 +151,7 @@ const Account = (props) => {
                 {user?(
                     <div>
                         <div className="row">
-                            <div className="col-4" onClick={() => handleOrderReviewClick(true)}>Orders</div>
+                            <div id="orders" placeholder="Orders" className="col-4" onClick={() => handleOrderReviewClick(true)}>Orders</div>
                             <div className="col-4" onClick={() => handleOrderReviewClick(false)}>Reviews</div>
                         </div>
                         {ordersReviews&&<Orders user={user}/>}
@@ -168,7 +168,7 @@ const Account = (props) => {
                 </div>
             )}
             <div>
-                <Link to={'/'} className="btn" onClick={handleLogout}>Logout</Link>
+                <Link to={'/'} placeholder="Logout" className="btn" onClick={handleLogout}>Logout</Link>
             </div>
         </div>
     );

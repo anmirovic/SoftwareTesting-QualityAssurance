@@ -62,7 +62,7 @@ const Order = (props) => {
     return(
         <div>
             {restaurant?(
-                <div className="bg-light p-2">
+                <div  placeholder= "Orders" className="bg-light p-2">
                     <div>
                         {restaurant.name}
                     </div>
@@ -75,8 +75,8 @@ const Order = (props) => {
                     ))}
                     <div className="mt-3">
                         <label>Rate the restaurant:</label>
-                        <input type="number" value={rating} onChange={handleRatingChange} min="1" max="5" />
-                        <button onClick={submitReview}>Submit Review</button>
+                        <input placeholder="Rate the restaurant" type="number" value={rating} onChange={handleRatingChange} min="1" max="5" />
+                        <button placeholder="Submit Review" onClick={submitReview}>Submit Review</button>
                     </div>
                 </div>
             ):(
